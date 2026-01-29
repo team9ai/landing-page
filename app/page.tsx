@@ -137,7 +137,7 @@ export default function Home() {
               </p>
             </div> */}
           </div>
-          <img src="/moltbot/bg.webp" id="bg" />
+          <img src="/bg.webp" id="bg" />
         </main>
 
         {/* Screenshot Section */}
@@ -152,7 +152,7 @@ export default function Home() {
 
               {/*eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/moltbot/screenshot.webp"
+                src="/screenshot.webp"
                 alt="Moltbot Terminal Interface"
                 width={1920}
                 height={1080}
