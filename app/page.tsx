@@ -21,11 +21,11 @@ export default function Home() {
           {/* Contact Us Button */}
           <a
             href="#contact"
-            className="group px-6 py-2.5 md:px-8 md:py-3 bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 text-white text-sm md:text-base font-bold rounded-full hover:from-amber-500 hover:via-yellow-500 hover:to-orange-500 transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_30px_-10px_rgba(251,191,36,0.6)] active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/50 flex items-center gap-2 relative overflow-hidden"
+            className="group px-4 py-2 md:px-5 md:py-2.5 text-white/80 text-sm md:text-base font-semibold rounded-lg border border-white/15 bg-white/5 hover:border-amber-300/60 hover:text-white transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/30 flex items-center gap-2"
           >
             <span className="relative z-10">Contact Us</span>
             <svg
-              className="w-4 h-4 transition-transform group-hover:translate-x-1 relative z-10"
+              className="w-4 h-4 transition-transform group-hover:translate-x-0.5 relative z-10"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -37,7 +37,6 @@ export default function Home() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-            <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </a>
         </header>
 
@@ -68,7 +67,7 @@ export default function Home() {
                 <span className="block text-white">
                   Bring a{" "}
                   <span className="inline-block bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent">
-                    Moltbot
+                    Clawdbot
                   </span>
                 </span>
                 <span className="block">to Your Team.</span>
@@ -85,7 +84,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 animate-fade-in-up animation-delay-300">
               <button
                 aria-label="Sign up for Team9"
-                className="group relative px-10 py-4 md:px-12 md:py-5 bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 text-white text-base md:text-lg font-bold rounded-full touch-action-manipulation transition-all duration-300 hover:scale-105 hover:shadow-[0_20px_60px_-15px_rgba(251,191,36,0.6)] active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/50 flex items-center gap-2"
+                className="group relative px-9 py-4 md:px-11 md:py-5 bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 text-white text-base md:text-lg font-bold rounded-xl md:rounded-2xl touch-action-manipulation transition-all duration-300 hover:scale-105 hover:shadow-[0_18px_50px_-14px_rgba(251,191,36,0.55)] active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/50 flex items-center gap-2"
               >
                 Sign Up
                 <svg
@@ -153,7 +152,7 @@ export default function Home() {
               {/*eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/screenshot.webp"
-                alt="Moltbot Terminal Interface"
+                alt="Clawdbot Terminal Interface"
                 width={1920}
                 height={1080}
                 className="w-full h-auto relative z-10"
@@ -162,15 +161,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* What is Team9/Moltbot */}
+        {/* What is Team9/Clawdbot */}
         <section className="px-6 md:px-12 lg:px-20 py-32 mt-[-20svh]">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
-                What is Moltbot?
+                What is Clawdbot?
               </h2>
               <p className="text-lg text-white/70 max-w-4xl mx-auto leading-relaxed">
-                Moltbot represents a fundamental shift in how we think about AI
+                Clawdbot represents a fundamental shift in how we think about AI
                 agents—from cloud-dependent services to sovereign, self-hosted
                 systems that you truly own and control.
               </p>
@@ -179,26 +178,26 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-xl text-white/80 leading-relaxed">
-                  Moltbot is a{" "}
+                  Clawdbot is a{" "}
                   <span className="text-amber-400 font-bold">
                     local-first AI agent
                   </span>{" "}
                   that runs on your own machine—Mac, Linux server, NAS, or any
                   hardware you control. Unlike cloud-based AI assistants,
-                  Moltbot keeps your sensitive data where it belongs: on your
+                  Clawdbot keeps your sensitive data where it belongs: on your
                   infrastructure.
                 </p>
                 <p className="text-lg text-white/80 leading-relaxed">
                   It&apos;s not just a chatbot; it&apos;s a complete agent
                   runtime with memory, scheduled execution, and real action
-                  capabilities. Moltbot can keep context over days and weeks,
+                  capabilities. Clawdbot can keep context over days and weeks,
                   run morning briefings automatically, react to webhooks and
                   events, and execute real operations with configurable safety
                   rails.
                 </p>
                 <p className="text-lg text-white/80 leading-relaxed">
                   <span className="text-yellow-400 font-semibold">Team9</span>{" "}
-                  makes deploying Moltbot instant. No complex setup, no
+                  makes deploying Clawdbot instant. No complex setup, no
                   infrastructure headaches, no manual configuration of Node.js,
                   messaging adapters, or security policies—just sovereign AI
                   agents that work for your team, on your terms, deployed in
@@ -207,7 +206,7 @@ export default function Home() {
                 <p className="text-base text-white/70 leading-relaxed">
                   Whether you&apos;re automating daily reports, monitoring
                   server health, managing your knowledge base, or orchestrating
-                  GitHub workflows, Moltbot brings the power of AI agents to
+                  GitHub workflows, Clawdbot brings the power of AI agents to
                   your infrastructure without sacrificing privacy or control.
                 </p>
               </div>
@@ -390,12 +389,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Why Moltbot Went Viral */}
+        {/* Why Clawdbot Went Viral */}
         <section className="px-6 md:px-12 lg:px-20 py-32 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                Why Moltbot Went Viral
+                Why Clawdbot Went Viral
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
                 The perfect storm of technology maturity, privacy concerns, and
@@ -463,7 +462,7 @@ export default function Home() {
                       For years, voice assistants promised a digital assistant
                       experience but lacked reliable action capabilities. When
                       large language models gained tool use and planning
-                      patterns, a real action loop became practical. Moltbot
+                      patterns, a real action loop became practical. Clawdbot
                       turned that possibility into reality.
                     </p>
                   </div>
@@ -527,7 +526,7 @@ export default function Home() {
                       Developers can add capabilities by attaching tool servers
                       rather than forking a monolith. The Model Context Protocol
                       creates a smoother ecosystem curve while letting users
-                      keep control. This composability turned Moltbot into a
+                      keep control. This composability turned Clawdbot into a
                       platform, not just a product.
                     </p>
                   </div>
@@ -675,7 +674,7 @@ export default function Home() {
                 How It Works
               </h2>
               <p className="text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
-                Moltbot&apos;s architecture is modular and opinionated: Gateway
+                Clawdbot&apos;s architecture is modular and opinionated: Gateway
                 handles communication, Runtime executes the plan-and-act loop,
                 and Memory stores context transparently.
               </p>
@@ -735,7 +734,7 @@ export default function Home() {
                     Memory: Markdown Storage
                   </h3>
                   <p className="text-white/80 leading-relaxed text-lg mb-3">
-                    Moltbot&apos;s &quot;Markdown memory&quot; design is both
+                    Clawdbot&apos;s &quot;Markdown memory&quot; design is both
                     SEO-friendly and user-friendly. Long-term memory is stored
                     in plain text files that you can inspect, edit, or delete
                     directly.
@@ -770,7 +769,7 @@ export default function Home() {
                 Network & Remote Access
               </h3>
               <p className="text-white/80 leading-relaxed mb-4">
-                A conservative baseline for Moltbot deployment binds services to{" "}
+                A conservative baseline for Clawdbot deployment binds services to{" "}
                 <code className="px-2 py-1 bg-black/30 rounded text-blue-300">
                   localhost
                 </code>{" "}
@@ -796,7 +795,7 @@ export default function Home() {
                 Installation & Deployment
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
-                Get Moltbot running on macOS, Linux, or WSL2 in minutes
+                Get Clawdbot running on macOS, Linux, or WSL2 in minutes
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full mt-6" />
             </div>
@@ -870,13 +869,13 @@ export default function Home() {
                   <div className="text-white/50">
                     nvm install 22 && nvm use 22
                   </div>
-                  <div className="mt-3"># Install Moltbot</div>
+                  <div className="mt-3"># Install Clawdbot</div>
                   <div className="text-white/50 break-all">
                     curl -fsSL https://clawd.bot/install.sh | bash
                   </div>
                   <div className="mt-3"># Start daemon</div>
                   <div className="text-white/50">
-                    moltbot onboard --install-daemon
+                    clawdbot onboard --install-daemon
                   </div>
                 </div>
               </div>
@@ -977,7 +976,7 @@ export default function Home() {
                 Skills & Automation
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
-                Extend Moltbot with custom workflows and scheduled operations
+                Extend Clawdbot with custom workflows and scheduled operations
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full mt-6" />
             </div>
@@ -1311,13 +1310,13 @@ export default function Home() {
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-white/75">
-                Everything you need to know about Moltbot
+                Everything you need to know about Clawdbot
               </p>
             </div>
             <div className="space-y-4">
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-amber-300 transition-colors">
-                  What is Moltbot used for?
+                  What is Clawdbot used for?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1344,7 +1343,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-yellow-300 transition-colors">
-                  Do I need a Mac mini to run Moltbot?
+                  Do I need a Mac mini to run Clawdbot?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1362,7 +1361,7 @@ export default function Home() {
                 <div className="px-6 pb-6">
                   <p className="text-white/80 leading-relaxed text-lg border-t border-white/10 pt-4">
                     No. A Mac mini is convenient for always-on hosting, but any
-                    machine you control can run Moltbot—Mac, Linux server, NAS,
+                    machine you control can run Clawdbot—Mac, Linux server, NAS,
                     or even a laptop. Availability matters more than the
                     hardware brand.
                   </p>
@@ -1371,7 +1370,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-orange-300 transition-colors">
-                  Can Moltbot run offline?
+                  Can Clawdbot run offline?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1397,7 +1396,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-yellow-200 transition-colors">
-                  Is Moltbot safe?
+                  Is Clawdbot safe?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1425,7 +1424,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-amber-300 transition-colors">
-                  What is MCP in Moltbot?
+                  What is MCP in Clawdbot?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1452,7 +1451,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-yellow-300 transition-colors">
-                  How do I install Moltbot on Windows?
+                  How do I install Clawdbot on Windows?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1480,7 +1479,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-orange-300 transition-colors">
-                  What&apos;s the difference between Moltbot and Moltbot?
+                  What&apos;s the difference between Clawdbot and Clawdbot?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1497,7 +1496,7 @@ export default function Home() {
                 </summary>
                 <div className="px-6 pb-6">
                   <p className="text-white/80 leading-relaxed text-lg border-t border-white/10 pt-4">
-                    Moltbot is the rebranded successor to Moltbot. The project
+                    Clawdbot is the rebranded successor to Clawdbot. The project
                     was renamed to avoid trademark conflicts while maintaining
                     the same core functionality and community. &quot;Molt&quot;
                     refers to crustaceans shedding their shell to
@@ -1509,7 +1508,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-amber-300 transition-colors">
-                  Can I use Moltbot with local LLMs?
+                  Can I use Clawdbot with local LLMs?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1538,7 +1537,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-yellow-300 transition-colors">
-                  How does Team9 simplify Moltbot deployment?
+                  How does Team9 simplify Clawdbot deployment?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1559,7 +1558,7 @@ export default function Home() {
                     configuring Node.js, managing dependencies, setting up
                     messaging adapters, and hardening security yourself, Team9
                     provides instant deployment with sensible defaults. You get
-                    a production-ready Moltbot agent with zero infrastructure
+                    a production-ready Clawdbot agent with zero infrastructure
                     headaches.
                   </p>
                 </div>
@@ -1568,15 +1567,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Moltbot vs Other Frameworks */}
+        {/* Clawdbot vs Other Frameworks */}
         <section className="px-6 md:px-12 lg:px-20 py-32 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">
-                Moltbot vs Other AI Frameworks
+                Clawdbot vs Other AI Frameworks
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
-                How Moltbot compares to AutoGPT, LangChain agents, and
+                How Clawdbot compares to AutoGPT, LangChain agents, and
                 cloud-based alternatives
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full mt-6" />
@@ -1595,7 +1594,7 @@ export default function Home() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-amber-300 mb-3 flex items-center gap-3">
-                      Moltbot
+                      Clawdbot
                       <span className="text-sm font-normal text-white/60">
                         (Local-First Sovereign Agent)
                       </span>
@@ -1776,16 +1775,16 @@ export default function Home() {
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                The Moltbot Advantage
+                The Clawdbot Advantage
               </h3>
               <p className="text-white/80 leading-relaxed text-lg">
-                Moltbot sits at the intersection of sovereignty, practicality,
+                Clawdbot sits at the intersection of sovereignty, practicality,
                 and ecosystem maturity. It&apos;s not just a framework (like
                 LangChain) or a research experiment (like early
                 AutoGPT)—it&apos;s a production-ready agent runtime that
                 integrates with your daily tools (chat apps, GitHub, calendars)
                 while keeping data local and operations transparent. With Team9,
-                you get Moltbot&apos;s power without the infrastructure burden.
+                you get Clawdbot&apos;s power without the infrastructure burden.
               </p>
             </div>
           </div>
