@@ -351,7 +351,7 @@ export default function Home() {
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6">
                 <span className="bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent">
-                  Built for Control & Privacy
+                  Openclaw: Built for Control & Privacy
                 </span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full" />
@@ -440,7 +440,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                Why Openclaw Went Viral
+                Why Openclaw Went Viral & Sparked Moltbook
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
                 The perfect storm of technology maturity, privacy concerns, and
@@ -642,7 +642,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">
-                What Teams Use It For
+                What Teams Use Openclaw For
               </h2>
               <p className="text-xl text-white/75 max-w-2xl mx-auto">
                 Real-world automation that runs on your infrastructure
@@ -772,7 +772,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto relative">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                How It Works
+                How Openclaw Works
               </h2>
               <p className="text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
                 Openclaw&apos;s architecture is modular and opinionated: Gateway
@@ -894,7 +894,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                Installation & Deployment
+                Openclaw Installation & Deployment
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
                 Get Openclaw running on macOS, Linux, or WSL2 in minutes
@@ -1075,7 +1075,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">
-                Skills & Automation
+                Openclaw Skills & Automation
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
                 Extend Openclaw with custom workflows and scheduled operations
@@ -1224,7 +1224,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">
-                Security & Risk Mitigation
+                Openclaw Security & Risk Mitigation
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
                 Agent systems expand attack surface—here&apos;s how to stay safe
@@ -1409,7 +1409,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">
-                Frequently Asked Questions
+                Openclaw & Moltbook FAQ
               </h2>
               <p className="text-xl text-white/75">
                 Everything you need to know about Openclaw
@@ -1944,7 +1944,7 @@ export default function Home() {
               Ready to Deploy
             </div>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight">
-              Ready to bring a sovereign AI agent to your team?
+              Ready to bring Openclaw AI agent to your team?
             </h2>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               Join teams that value control, privacy, and instant deployment.
