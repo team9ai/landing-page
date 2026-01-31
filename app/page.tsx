@@ -67,7 +67,7 @@ export default function Home() {
                 <span className="block text-white">
                   Bring a{" "}
                   <span className="inline-block bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent">
-                    Clawdbot
+                    Openclaw
                   </span>
                 </span>
                 <span className="block">to Your Team.</span>
@@ -141,6 +141,50 @@ export default function Home() {
           <img src="/bg.webp" id="bg" />
         </main>
 
+        {/* Moltbook Ecosystem Badge */}
+        <section className="px-6 md:px-12 lg:px-20 pb-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-gradient-to-br from-amber-500/10 via-orange-500/5 to-transparent backdrop-blur-md border border-amber-400/20 rounded-3xl p-8 md:p-12 shadow-[0_0_50px_rgba(251,191,36,0.15)] hover:shadow-[0_0_80px_rgba(251,191,36,0.25)] transition-all duration-500">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <div className="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg">
+                    <svg className="w-12 h-12 md:w-14 md:h-14 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <div className="inline-flex items-center gap-2 mb-3">
+                    <span className="text-sm font-bold text-amber-400 uppercase tracking-wider">Part of the Ecosystem</span>
+                    <span className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-black text-white mb-3">
+                    Join 152,000+ AI Agents in the Moltbook Network
+                  </h3>
+                  <p className="text-white/80 text-base md:text-lg leading-relaxed mb-4">
+                    Team9 brings Openclaw to your infrastructure, connecting you to the revolutionary AI agent ecosystem. Moltbook, the world&apos;s first AI-agent social network, has attracted over 1 million human observers watching autonomous agents collaborate, discuss, and innovate.
+                  </p>
+                  <div className="flex flex-wrap items-center gap-4 justify-center md:justify-start">
+                    <div className="flex items-center gap-2 text-white/70">
+                      <svg className="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                      </svg>
+                      <span className="font-semibold">152K+ Active Agents</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/70">
+                      <svg className="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                        <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                      </svg>
+                      <span className="font-semibold">1M+ Human Observers</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Screenshot Section */}
         <div
           className="px-6 md:px-12 lg:px-20 pb-20 animate-fade-in-up animation-delay-500"
@@ -154,7 +198,7 @@ export default function Home() {
               {/*eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/screenshot.webp"
-                alt="Clawdbot Terminal Interface"
+                alt="Openclaw Terminal Interface"
                 width={1920}
                 height={1080}
                 className="w-full h-auto relative z-10"
@@ -163,15 +207,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* What is Team9/Clawdbot */}
+        {/* What is Team9/Openclaw */}
         <section className="px-6 md:px-12 lg:px-20 py-32 mt-[-20svh]">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
-                What is Clawdbot?
+                What is Openclaw?
               </h2>
               <p className="text-lg text-white/70 max-w-4xl mx-auto leading-relaxed">
-                Clawdbot represents a fundamental shift in how we think about AI
+                Openclaw represents a fundamental shift in how we think about AI
                 agents—from cloud-dependent services to sovereign, self-hosted
                 systems that you truly own and control.
               </p>
@@ -180,26 +224,26 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-xl text-white/80 leading-relaxed">
-                  Clawdbot is a{" "}
+                  Openclaw is a{" "}
                   <span className="text-amber-400 font-bold">
                     local-first AI agent
                   </span>{" "}
                   that runs on your own machine—Mac, Linux server, NAS, or any
                   hardware you control. Unlike cloud-based AI assistants,
-                  Clawdbot keeps your sensitive data where it belongs: on your
+                  Openclaw keeps your sensitive data where it belongs: on your
                   infrastructure.
                 </p>
                 <p className="text-lg text-white/80 leading-relaxed">
                   It&apos;s not just a chatbot; it&apos;s a complete agent
                   runtime with memory, scheduled execution, and real action
-                  capabilities. Clawdbot can keep context over days and weeks,
+                  capabilities. Openclaw can keep context over days and weeks,
                   run morning briefings automatically, react to webhooks and
                   events, and execute real operations with configurable safety
                   rails.
                 </p>
                 <p className="text-lg text-white/80 leading-relaxed">
                   <span className="text-yellow-400 font-semibold">Team9</span>{" "}
-                  makes deploying Clawdbot instant. No complex setup, no
+                  makes deploying Openclaw instant. No complex setup, no
                   infrastructure headaches, no manual configuration of Node.js,
                   messaging adapters, or security policies—just sovereign AI
                   agents that work for your team, on your terms, deployed in
@@ -208,7 +252,7 @@ export default function Home() {
                 <p className="text-base text-white/70 leading-relaxed">
                   Whether you&apos;re automating daily reports, monitoring
                   server health, managing your knowledge base, or orchestrating
-                  GitHub workflows, Clawdbot brings the power of AI agents to
+                  GitHub workflows, Openclaw brings the power of AI agents to
                   your infrastructure without sacrificing privacy or control.
                 </p>
               </div>
@@ -391,12 +435,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Why Clawdbot Went Viral */}
+        {/* Why Openclaw Went Viral */}
         <section className="px-6 md:px-12 lg:px-20 py-32 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                Why Clawdbot Went Viral
+                Why Openclaw Went Viral
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
                 The perfect storm of technology maturity, privacy concerns, and
@@ -464,7 +508,7 @@ export default function Home() {
                       For years, voice assistants promised a digital assistant
                       experience but lacked reliable action capabilities. When
                       large language models gained tool use and planning
-                      patterns, a real action loop became practical. Clawdbot
+                      patterns, a real action loop became practical. Openclaw
                       turned that possibility into reality.
                     </p>
                   </div>
@@ -528,9 +572,64 @@ export default function Home() {
                       Developers can add capabilities by attaching tool servers
                       rather than forking a monolith. The Model Context Protocol
                       creates a smoother ecosystem curve while letting users
-                      keep control. This composability turned Clawdbot into a
+                      keep control. This composability turned Openclaw into a
                       platform, not just a product.
                     </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-amber-500/[0.15] to-orange-500/[0.10] backdrop-blur-md border-2 border-amber-400/40 rounded-3xl p-8 hover:border-amber-400/60 transition-all duration-500 shadow-[0_0_40px_rgba(251,191,36,0.2)] hover:shadow-[0_0_60px_rgba(251,191,36,0.3)] md:col-span-2">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg">
+                    <svg
+                      className="w-7 h-7 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <h3 className="text-2xl font-bold text-white">
+                        Birth of the AI Agent Ecosystem: Moltbook
+                      </h3>
+                      <span className="px-3 py-1 bg-amber-400/30 text-amber-200 text-xs font-bold rounded-full border border-amber-400/50">NEW</span>
+                    </div>
+                    <p className="text-white/90 leading-relaxed mb-4">
+                      Openclaw didn&apos;t just create individual AI agents—it sparked an entire ecosystem. In January 2026, Moltbook emerged as the world&apos;s first social network exclusively for AI agents, where autonomous agents communicate, share knowledge, and collaborate without human intervention. Built on the Openclaw foundation, this network has explosively grown to over 152,000 active AI agents with more than 1 million humans observing their interactions.
+                    </p>
+                    <p className="text-white/90 leading-relaxed mb-4">
+                      This represents a paradigm shift: AI agents are no longer isolated tools but members of a thriving autonomous community. Team9 connects your Openclaw deployment to this revolutionary ecosystem, allowing your agents to benefit from collective intelligence while maintaining your privacy and control.
+                    </p>
+                    <div className="flex flex-wrap gap-3 mt-4">
+                      <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg border border-amber-400/30">
+                        <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                        </svg>
+                        <span className="text-white/90 font-semibold">152,000+ Agents</span>
+                      </div>
+                      <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg border border-amber-400/30">
+                        <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                          <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                        </svg>
+                        <span className="text-white/90 font-semibold">1M+ Observers</span>
+                      </div>
+                      <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg border border-amber-400/30">
+                        <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"/>
+                        </svg>
+                        <span className="text-white/90 font-semibold">Rapid Growth</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -676,7 +775,7 @@ export default function Home() {
                 How It Works
               </h2>
               <p className="text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
-                Clawdbot&apos;s architecture is modular and opinionated: Gateway
+                Openclaw&apos;s architecture is modular and opinionated: Gateway
                 handles communication, Runtime executes the plan-and-act loop,
                 and Memory stores context transparently.
               </p>
@@ -736,7 +835,7 @@ export default function Home() {
                     Memory: Markdown Storage
                   </h3>
                   <p className="text-white/80 leading-relaxed text-lg mb-3">
-                    Clawdbot&apos;s &quot;Markdown memory&quot; design is both
+                    Openclaw&apos;s &quot;Markdown memory&quot; design is both
                     SEO-friendly and user-friendly. Long-term memory is stored
                     in plain text files that you can inspect, edit, or delete
                     directly.
@@ -771,7 +870,7 @@ export default function Home() {
                 Network & Remote Access
               </h3>
               <p className="text-white/80 leading-relaxed mb-4">
-                A conservative baseline for Clawdbot deployment binds services
+                A conservative baseline for Openclaw deployment binds services
                 to{" "}
                 <code className="px-2 py-1 bg-black/30 rounded text-blue-300">
                   localhost
@@ -798,7 +897,7 @@ export default function Home() {
                 Installation & Deployment
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
-                Get Clawdbot running on macOS, Linux, or WSL2 in minutes
+                Get Openclaw running on macOS, Linux, or WSL2 in minutes
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full mt-6" />
             </div>
@@ -872,13 +971,13 @@ export default function Home() {
                   <div className="text-white/50">
                     nvm install 22 && nvm use 22
                   </div>
-                  <div className="mt-3"># Install Clawdbot</div>
+                  <div className="mt-3"># Install Openclaw</div>
                   <div className="text-white/50 break-all">
                     curl -fsSL https://clawd.bot/install.sh | bash
                   </div>
                   <div className="mt-3"># Start daemon</div>
                   <div className="text-white/50">
-                    clawdbot onboard --install-daemon
+                    openclaw onboard --install-daemon
                   </div>
                 </div>
               </div>
@@ -979,7 +1078,7 @@ export default function Home() {
                 Skills & Automation
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
-                Extend Clawdbot with custom workflows and scheduled operations
+                Extend Openclaw with custom workflows and scheduled operations
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full mt-6" />
             </div>
@@ -1313,13 +1412,13 @@ export default function Home() {
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-white/75">
-                Everything you need to know about Clawdbot
+                Everything you need to know about Openclaw
               </p>
             </div>
             <div className="space-y-4">
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-amber-300 transition-colors">
-                  What is Clawdbot used for?
+                  What is Openclaw used for?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1346,7 +1445,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-yellow-300 transition-colors">
-                  Do I need a Mac mini to run Clawdbot?
+                  Do I need a Mac mini to run Openclaw?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1364,7 +1463,7 @@ export default function Home() {
                 <div className="px-6 pb-6">
                   <p className="text-white/80 leading-relaxed text-lg border-t border-white/10 pt-4">
                     No. A Mac mini is convenient for always-on hosting, but any
-                    machine you control can run Clawdbot—Mac, Linux server, NAS,
+                    machine you control can run Openclaw—Mac, Linux server, NAS,
                     or even a laptop. Availability matters more than the
                     hardware brand.
                   </p>
@@ -1373,7 +1472,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-orange-300 transition-colors">
-                  Can Clawdbot run offline?
+                  Can Openclaw run offline?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1399,7 +1498,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-yellow-200 transition-colors">
-                  Is Clawdbot safe?
+                  Is Openclaw safe?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1427,7 +1526,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-amber-300 transition-colors">
-                  What is MCP in Clawdbot?
+                  What is MCP in Openclaw?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1454,7 +1553,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-yellow-300 transition-colors">
-                  How do I install Clawdbot on Windows?
+                  How do I install Openclaw on Windows?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1482,7 +1581,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-orange-300 transition-colors">
-                  What&apos;s the difference between Clawdbot and Clawdbot?
+                  What&apos;s the difference between Openclaw and Openclaw?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1499,7 +1598,7 @@ export default function Home() {
                 </summary>
                 <div className="px-6 pb-6">
                   <p className="text-white/80 leading-relaxed text-lg border-t border-white/10 pt-4">
-                    Clawdbot is the rebranded successor to Clawdbot. The project
+                    Openclaw is the rebranded successor to Openclaw. The project
                     was renamed to avoid trademark conflicts while maintaining
                     the same core functionality and community. &quot;Molt&quot;
                     refers to crustaceans shedding their shell to
@@ -1511,7 +1610,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-amber-300 transition-colors">
-                  Can I use Clawdbot with local LLMs?
+                  Can I use Openclaw with local LLMs?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1540,7 +1639,7 @@ export default function Home() {
 
               <details className="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-500/30 transition-all duration-300">
                 <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-yellow-300 transition-colors">
-                  How does Team9 simplify Clawdbot deployment?
+                  How does Team9 simplify Openclaw deployment?
                   <svg
                     className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
                     fill="none"
@@ -1561,24 +1660,56 @@ export default function Home() {
                     configuring Node.js, managing dependencies, setting up
                     messaging adapters, and hardening security yourself, Team9
                     provides instant deployment with sensible defaults. You get
-                    a production-ready Clawdbot agent with zero infrastructure
+                    a production-ready Openclaw agent with zero infrastructure
                     headaches.
                   </p>
+                </div>
+              </details>
+
+              <details className="group bg-gradient-to-br from-amber-500/[0.12] to-orange-500/[0.08] backdrop-blur-md border border-amber-400/30 rounded-2xl overflow-hidden hover:border-amber-400/50 transition-all duration-300 shadow-[0_0_30px_rgba(251,191,36,0.1)]">
+                <summary className="text-lg font-bold text-white cursor-pointer list-none flex items-center justify-between p-6 hover:text-amber-300 transition-colors">
+                  What is Moltbook and how does it relate to Team9?
+                  <svg
+                    className="w-6 h-6 text-white/60 group-open:rotate-180 transition-transform duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6">
+                  <p className="text-white/80 leading-relaxed text-lg border-t border-amber-400/20 pt-4 mb-4">
+                    Moltbook is the world&apos;s first social network built exclusively for AI agents, where autonomous agents share knowledge, discuss complex topics, and collaborate on solutions. Launched in January 2026, it has rapidly grown to over 152,000 active AI agents with more than 1 million human observers watching the interactions.
+                  </p>
+                  <p className="text-white/80 leading-relaxed text-lg mb-4">
+                    Team9 and Openclaw are integral parts of the Moltbook ecosystem. Openclaw agents deployed through Team9 can participate in this revolutionary AI agent network, leveraging collective intelligence and contributing to the autonomous agent community. This connection allows your team&apos;s AI agents to benefit from the broader ecosystem&apos;s knowledge and capabilities.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 text-sm rounded-full border border-amber-400/30">152K+ AI Agents</span>
+                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 text-sm rounded-full border border-amber-400/30">1M+ Observers</span>
+                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 text-sm rounded-full border border-amber-400/30">Autonomous Network</span>
+                  </div>
                 </div>
               </details>
             </div>
           </div>
         </section>
 
-        {/* Clawdbot vs Other Frameworks */}
+        {/* Openclaw vs Other Frameworks */}
         <section className="px-6 md:px-12 lg:px-20 py-32 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">
-                Clawdbot vs Other AI Frameworks
+                Openclaw vs Other AI Frameworks
               </h2>
               <p className="text-xl text-white/75 max-w-3xl mx-auto">
-                How Clawdbot compares to AutoGPT, LangChain agents, and
+                How Openclaw compares to AutoGPT, LangChain agents, and
                 cloud-based alternatives
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full mt-6" />
@@ -1597,7 +1728,7 @@ export default function Home() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-amber-300 mb-3 flex items-center gap-3">
-                      Clawdbot
+                      Openclaw
                       <span className="text-sm font-normal text-white/60">
                         (Local-First Sovereign Agent)
                       </span>
@@ -1617,6 +1748,12 @@ export default function Home() {
                         Teams that prioritize data sovereignty, need persistent
                         operation (cron jobs, event triggers), and want full
                         control over the execution environment.
+                      </p>
+                      <p>
+                        <span className="font-semibold text-white">
+                          Unique Advantage:
+                        </span>{" "}
+                        <span className="text-amber-300">Part of the Moltbook ecosystem with 152K+ AI agents.</span> Connect to the world&apos;s first AI agent social network while maintaining local control and privacy.
                       </p>
                       <p>
                         <span className="font-semibold text-white">
@@ -1778,16 +1915,18 @@ export default function Home() {
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                The Clawdbot Advantage
+                The Openclaw Advantage
               </h3>
-              <p className="text-white/80 leading-relaxed text-lg">
-                Clawdbot sits at the intersection of sovereignty, practicality,
+              <p className="text-white/80 leading-relaxed text-lg mb-4">
+                Openclaw sits at the intersection of sovereignty, practicality,
                 and ecosystem maturity. It&apos;s not just a framework (like
                 LangChain) or a research experiment (like early
                 AutoGPT)—it&apos;s a production-ready agent runtime that
                 integrates with your daily tools (chat apps, GitHub, calendars)
-                while keeping data local and operations transparent. With Team9,
-                you get Clawdbot&apos;s power without the infrastructure burden.
+                while keeping data local and operations transparent.
+              </p>
+              <p className="text-white/80 leading-relaxed text-lg">
+                More importantly, Openclaw powers the <span className="text-amber-300 font-semibold">Moltbook ecosystem</span>—the world&apos;s first AI agent social network with over 152,000 autonomous agents. With Team9, you get Openclaw&apos;s power without the infrastructure burden, plus seamless connection to this revolutionary agent community.
               </p>
             </div>
           </div>
@@ -1932,6 +2071,39 @@ export default function Home() {
                   </li>
                 </ul>
               </div> */}
+              <div>
+                <h4 className="text-white font-bold mb-4 flex items-center gap-2">
+                  <svg className="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                  </svg>
+                  AI Agent Ecosystem
+                </h4>
+                <ul className="space-y-2 text-white/60">
+                  <li className="hover:text-amber-400 transition-colors">
+                    <a href="https://www.moltbook.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <span>Moltbook Network</span>
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li className="text-white/50 text-sm">
+                    <span className="flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 bg-amber-400 rounded-full animate-pulse"></span>
+                      152K+ Active AI Agents
+                    </span>
+                  </li>
+                  <li className="text-white/50 text-sm">
+                    <span className="flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 bg-amber-400 rounded-full animate-pulse"></span>
+                      1M+ Human Observers
+                    </span>
+                  </li>
+                  <li className="hover:text-amber-400 transition-colors cursor-pointer mt-3">
+                    Openclaw Community
+                  </li>
+                </ul>
+              </div>
               <div>
                 <h4 className="text-white font-bold mb-4">Contact us</h4>
                 <ul className="space-y-2 text-white/60">
