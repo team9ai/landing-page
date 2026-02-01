@@ -101,12 +101,31 @@ export default function RootLayout({
     }
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Team9?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Team9 is an AI workspace built on OpenClaw and Moltbook. It lets you hire AI Staff inside the product and collaborate with them like teammates—assign tasks, share context, and coordinate work in one place. Team9 ships with a zero-setup, managed OpenClaw experience, so you can use OpenClaw without installing or configuring anything. The goal is simple: build an AI team, run AI-powered collaboration, and get work done faster with less overhead."
+        }
+      }
+    ]
+  };
+
   return (
     <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </head>
       <body

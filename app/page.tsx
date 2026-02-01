@@ -207,8 +207,97 @@ export default function Home() {
           </div>
         </div>
 
-        {/* What is Team9/Openclaw */}
+        {/* What is Team9 */}
         <section className="px-6 md:px-12 lg:px-20 py-32 mt-[-20svh]">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent">
+                What is Team9?
+              </h2>
+              <p className="text-lg text-white/70 max-w-4xl mx-auto leading-relaxed">
+                An AI workspace where you hire AI Staff and collaborate with them like real teammates.
+              </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full mt-6" />
+            </div>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <p className="text-xl text-white/80 leading-relaxed">
+                  Team9 is an{" "}
+                  <span className="text-amber-400 font-bold">
+                    AI workspace
+                  </span>{" "}
+                  built on OpenClaw and Moltbook. It lets you hire AI Staff inside the product and collaborate with them like teammates—assign tasks, share context, and coordinate work in one place.
+                </p>
+                <p className="text-lg text-white/80 leading-relaxed">
+                  Team9 ships with a{" "}
+                  <span className="text-yellow-400 font-semibold">
+                    zero-setup, managed OpenClaw experience
+                  </span>
+                  , so you can use OpenClaw without installing or configuring anything.
+                </p>
+                <p className="text-lg text-white/80 leading-relaxed">
+                  The goal is simple: build an AI team, run AI-powered collaboration, and get work done faster with less overhead.
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 hover:scale-[1.02]">
+                <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
+                  Why Team9
+                </h3>
+                <div className="space-y-5">
+                  <div className="flex items-start gap-4 group">
+                    <div className="flex-shrink-0 w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center group-hover:bg-amber-500/30 transition-colors">
+                      <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-white font-semibold text-lg mb-1">
+                        Hire AI Staff
+                      </p>
+                      <p className="text-white/60 text-sm leading-relaxed">
+                        Bring AI teammates into your workspace and assign tasks just like real colleagues
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 group">
+                    <div className="flex-shrink-0 w-10 h-10 bg-yellow-500/20 rounded-xl flex items-center justify-center group-hover:bg-yellow-500/30 transition-colors">
+                      <svg className="w-5 h-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-white font-semibold text-lg mb-1">
+                        Zero Setup
+                      </p>
+                      <p className="text-white/60 text-sm leading-relaxed">
+                        Managed OpenClaw out of the box—no installation, no configuration
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 group">
+                    <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-xl flex items-center justify-center group-hover:bg-orange-500/30 transition-colors">
+                      <svg className="w-5 h-5 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-white font-semibold text-lg mb-1">
+                        Real Collaboration
+                      </p>
+                      <p className="text-white/60 text-sm leading-relaxed">
+                        Share context, coordinate work, and get things done faster with less overhead
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What is Openclaw */}
+        <section className="px-6 md:px-12 lg:px-20 py-32">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
