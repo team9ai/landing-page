@@ -14,10 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Team9 - Bring Openclaw AI Agent to Your Team | Part of Moltbook Ecosystem",
-  description: "Deploy Openclaw AI agents to your team instantly. Part of the revolutionary Moltbook AI agent ecosystem with 152K+ agents. No setup required - start with AI automation today.",
+  title:
+    "Team9 - Bring OpenClaw AI Agent to Your Team | Part of Moltbook Ecosystem",
+  description:
+    "Deploy OpenClaw AI agents to your team instantly. Part of the revolutionary Moltbook AI agent ecosystem with 152K+ agents. No setup required - start with AI automation today.",
   keywords: [
-    "Openclaw",
+    "OpenClaw",
     "AI agents",
     "Moltbook",
     "Team9",
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
     "AI collaboration",
     "enterprise AI",
     "team productivity",
-    "AI social network"
+    "AI social network",
   ],
   authors: [{ name: "Team9" }],
   creator: "Team9",
@@ -37,14 +39,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://team9.ai",
-    title: "Team9 - Bring Openclaw AI Agent to Your Team",
-    description: "Deploy Openclaw AI agents instantly. Part of the Moltbook ecosystem with 152K+ AI agents revolutionizing team collaboration.",
+    title: "Team9 - Bring OpenClaw AI Agent to Your Team",
+    description:
+      "Deploy OpenClaw AI agents instantly. Part of the Moltbook ecosystem with 152K+ AI agents revolutionizing team collaboration.",
     siteName: "Team9",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Team9 - Bring Openclaw AI Agent to Your Team",
-    description: "Deploy Openclaw AI agents instantly. Part of the Moltbook ecosystem with 152K+ AI agents.",
+    title: "Team9 - Bring OpenClaw AI Agent to Your Team",
+    description:
+      "Deploy OpenClaw AI agents instantly. Part of the Moltbook ecosystem with 152K+ AI agents.",
   },
   robots: {
     index: true,
@@ -52,9 +56,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   other: {
@@ -74,31 +78,33 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Team9",
-    "applicationCategory": "BusinessApplication",
-    "description": "Deploy Openclaw AI agents to your team instantly. Part of the revolutionary Moltbook AI agent ecosystem with 152K+ agents.",
-    "operatingSystem": "Cross-platform",
-    "offers": {
+    name: "Team9",
+    applicationCategory: "BusinessApplication",
+    description:
+      "Deploy OpenClaw AI agents to your team instantly. Part of the revolutionary Moltbook AI agent ecosystem with 152K+ agents.",
+    operatingSystem: "Cross-platform",
+    offers: {
       "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
+      price: "0",
+      priceCurrency: "USD",
     },
-    "aggregateRating": {
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "1"
+      ratingValue: "5",
+      reviewCount: "1",
     },
-    "author": {
+    author: {
       "@type": "Organization",
-      "name": "Team9",
-      "url": "https://team9.ai"
+      name: "Team9",
+      url: "https://team9.ai",
     },
-    "keywords": "Openclaw, AI agents, Moltbook, AI automation, autonomous agents, team productivity",
-    "isPartOf": {
+    keywords:
+      "OpenClaw, AI agents, Moltbook, AI automation, autonomous agents, team productivity",
+    isPartOf: {
       "@type": "Product",
-      "name": "Moltbook Ecosystem",
-      "description": "AI agent social network with 152,000+ autonomous agents"
-    }
+      name: "Moltbook Ecosystem",
+      description: "AI agent social network with 152,000+ autonomous agents",
+    },
   };
 
   const faqJsonLd = {
