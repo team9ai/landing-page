@@ -1,14 +1,19 @@
 {
   "header": {
     "contactUs": "Fale Conosco",
-    "signIn": "Entrar"
+    "signIn": "Entrar",
+    "signUp": "Cadastrar"
   },
   "hero": {
     "badge": "Sem configuração necessária.",
     "headline1": "Traga um",
     "headline2": "para sua equipe.",
     "headline3": "Instantaneamente.",
-    "signUp": "Cadastrar"
+    "signUp": "Cadastrar",
+    "deployOpenSource": "Deploy OpenSource",
+    "startForFree": "Começar Grátis",
+    "alreadyHaveAccount": "Já tem uma conta?",
+    "signIn": "Entrar"
   },
   "moltbook": {
     "label": "Parte do Ecossistema",

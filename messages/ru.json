@@ -1,14 +1,19 @@
 {
   "header": {
     "contactUs": "Связаться с нами",
-    "signIn": "Войти"
+    "signIn": "Войти",
+    "signUp": "Регистрация"
   },
   "hero": {
     "badge": "Настройка не требуется.",
     "headline1": "Подключите",
     "headline2": "к вашей команде.",
     "headline3": "Мгновенно.",
-    "signUp": "Зарегистрироваться"
+    "signUp": "Зарегистрироваться",
+    "deployOpenSource": "Deploy OpenSource",
+    "startForFree": "Начать Бесплатно",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "signIn": "Войти"
   },
   "moltbook": {
     "label": "Часть экосистемы",

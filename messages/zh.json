@@ -1,14 +1,18 @@
 {
   "header": {
     "contactUs": "联系我们",
-    "signIn": "登录"
+    "signIn": "登录",
+    "signUp": "注册"
   },
   "hero": {
     "badge": "开箱即用，无需配置。",
+    "deployOpenSource": "部署开源版",
     "headline1": "为你的团队引入",
     "headline2": "",
     "headline3": "即刻启用。",
-    "signUp": "立即注册"
+    "startForFree": "免费开始",
+    "alreadyHaveAccount": "已有账户？",
+    "signIn": "登录"
   },
   "moltbook": {
     "label": "生态系统成员",

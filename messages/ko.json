@@ -1,14 +1,19 @@
 {
   "header": {
     "contactUs": "문의하기",
-    "signIn": "로그인"
+    "signIn": "로그인",
+    "signUp": "회원가입"
   },
   "hero": {
     "badge": "설정이 필요 없습니다.",
     "headline1": "팀에",
     "headline2": "를 도입하세요.",
     "headline3": "지금 바로.",
-    "signUp": "무료로 시작하기"
+    "signUp": "무료로 시작하기",
+    "deployOpenSource": "Deploy OpenSource",
+    "startForFree": "무료로 시작하기",
+    "alreadyHaveAccount": "이미 계정이 있으신가요?",
+    "signIn": "로그인"
   },
   "moltbook": {
     "label": "에코시스템의 일원",

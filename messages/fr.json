@@ -1,14 +1,19 @@
 {
   "header": {
     "contactUs": "Nous contacter",
-    "signIn": "Se connecter"
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire"
   },
   "hero": {
     "badge": "Aucune installation requise.",
     "headline1": "Intégrez un",
     "headline2": "à votre équipe.",
     "headline3": "Instantanément.",
-    "signUp": "S'inscrire"
+    "signUp": "S'inscrire",
+    "deployOpenSource": "Deploy OpenSource",
+    "startForFree": "Commencer Gratuitement",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "signIn": "Se Connecter"
   },
   "moltbook": {
     "label": "Membre de l'écosystème",

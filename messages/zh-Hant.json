@@ -1,14 +1,19 @@
 {
   "header": {
     "contactUs": "聯絡我們",
-    "signIn": "登入"
+    "signIn": "登入",
+    "signUp": "註冊"
   },
   "hero": {
     "badge": "開箱即用，無需設定。",
     "headline1": "為你的團隊引入",
     "headline2": "",
     "headline3": "即刻啟用。",
-    "signUp": "立即註冊"
+    "signUp": "立即註冊",
+    "deployOpenSource": "部署開源版",
+    "startForFree": "免費開始",
+    "alreadyHaveAccount": "已有帳戶？",
+    "signIn": "登入"
   },
   "moltbook": {
     "label": "生態系統成員",

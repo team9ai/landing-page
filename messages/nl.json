@@ -1,14 +1,19 @@
 {
   "header": {
     "contactUs": "Neem contact op",
-    "signIn": "Inloggen"
+    "signIn": "Inloggen",
+    "signUp": "Registreren"
   },
   "hero": {
     "badge": "Geen installatie nodig.",
     "headline1": "Breng een",
     "headline2": "naar je team.",
     "headline3": "Direct.",
-    "signUp": "Registreren"
+    "signUp": "Registreren",
+    "deployOpenSource": "Deploy OpenSource",
+    "startForFree": "Gratis Beginnen",
+    "alreadyHaveAccount": "Heb je al een account?",
+    "signIn": "Inloggen"
   },
   "moltbook": {
     "label": "Onderdeel van het ecosysteem",

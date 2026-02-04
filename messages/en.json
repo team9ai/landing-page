@@ -1,14 +1,18 @@
 {
   "header": {
     "contactUs": "Contact Us",
-    "signIn": "Sign In"
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
   },
   "hero": {
     "badge": "No setup required.",
+    "deployOpenSource": "Deploy OpenSource",
     "headline1": "Bring a",
     "headline2": "to Your Team.",
     "headline3": "Instantly.",
-    "signUp": "Sign Up"
+    "startForFree": "Start For Free",
+    "alreadyHaveAccount": "Already have an Account?",
+    "signIn": "Sign In"
   },
   "moltbook": {
     "label": "Part of the Ecosystem",

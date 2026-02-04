@@ -1,14 +1,19 @@
 {
   "header": {
     "contactUs": "お問い合わせ",
-    "signIn": "ログイン"
+    "signIn": "ログイン",
+    "signUp": "サインアップ"
   },
   "hero": {
     "badge": "セットアップ不要。",
     "headline1": "あなたのチームに",
     "headline2": "を。",
     "headline3": "今すぐ。",
-    "signUp": "無料で始める"
+    "signUp": "無料で始める",
+    "deployOpenSource": "Deploy OpenSource",
+    "startForFree": "無料で始める",
+    "alreadyHaveAccount": "アカウントをお持ちですか？",
+    "signIn": "サインイン"
   },
   "moltbook": {
     "label": "エコシステムの一部",
