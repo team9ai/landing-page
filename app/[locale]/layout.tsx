@@ -68,9 +68,20 @@ export async function generateMetadata({
         "_vTvm7VVnIcMe_uNIUoGBgUR6ePuT3RcumdCT_tGHT4",
     },
     alternates: {
+      canonical: `https://team9.ai/${locale}`,
       languages: {
-        en: "/en",
+        en: "/",
         zh: "/zh",
+        "zh-Hant": "/zh-Hant",
+        es: "/es",
+        pt: "/pt",
+        fr: "/fr",
+        de: "/de",
+        ja: "/ja",
+        ko: "/ko",
+        ru: "/ru",
+        it: "/it",
+        nl: "/nl",
       },
     },
   };

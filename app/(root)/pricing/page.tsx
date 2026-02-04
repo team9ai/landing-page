@@ -7,6 +7,9 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("pricingTitle"),
     description: t("pricingDescription"),
+    alternates: {
+      canonical: "https://team9.ai/pricing",
+    },
   };
 }
 

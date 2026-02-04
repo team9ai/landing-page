@@ -13,6 +13,9 @@ export async function generateMetadata({
   return {
     title: t("pricingTitle"),
     description: t("pricingDescription"),
+    alternates: {
+      canonical: `https://team9.ai/${locale}/pricing`,
+    },
   };
 }
 
