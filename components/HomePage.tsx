@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { APP_BASE_URL } from "@/utils/env";
 
 export default async function HomePage({ locale }: { locale: string }) {
   setRequestLocale(locale);
@@ -50,13 +51,13 @@ export default async function HomePage({ locale }: { locale: string }) {
           <div className="flex items-center gap-4">
             <LanguageSwitcher locale={locale} />
             <a
-              href="https://app.team9.ai/login"
+              href={`${APP_BASE_URL}/login`}
               className="px-4 py-2 md:px-5 md:py-2.5 text-white/70 text-sm md:text-base font-semibold hover:text-white transition-colors duration-200"
             >
               {tHeader("signIn")}
             </a>
             <a
-              href="https://app.team9.ai/"
+              href={APP_BASE_URL}
               className="px-4 py-2 md:px-5 md:py-2.5 text-sm md:text-base font-semibold rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-400 hover:to-orange-400 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/30"
             >
               {tHeader("signUp")}
@@ -115,7 +116,7 @@ export default async function HomePage({ locale }: { locale: string }) {
 
             {/* CTA Buttons */}
             <div className="flex flex-col items-center justify-center gap-3 pt-2 animate-fade-in-up animation-delay-300">
-              <a href="https://app.team9.ai/">
+              <a href={APP_BASE_URL}>
                 <button
                   aria-label="Start for free on Team9"
                   className="group relative px-9 py-4 md:px-11 md:py-5 bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 text-white text-base md:text-lg font-bold rounded-xl md:rounded-2xl touch-action-manipulation transition-all duration-300 hover:scale-105 hover:shadow-[0_18px_50px_-14px_rgba(251,191,36,0.55)] active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/50 flex items-center gap-2"
@@ -139,7 +140,7 @@ export default async function HomePage({ locale }: { locale: string }) {
               <p className="text-sm text-white/50">
                 {tHero("alreadyHaveAccount")}{" "}
                 <a
-                  href="https://app.team9.ai/login"
+                  href={`${APP_BASE_URL}/login`}
                   className="text-amber-400 hover:text-amber-300 font-medium underline underline-offset-2 transition-colors duration-200"
                 >
                   {tHero("signIn")}

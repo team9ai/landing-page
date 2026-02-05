@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { APP_BASE_URL } from "@/utils/env";
 
 export default async function PricingPage({ locale }: { locale: string }) {
   setRequestLocale(locale);
@@ -44,7 +45,7 @@ export default async function PricingPage({ locale }: { locale: string }) {
 
             {/* Sign In Button */}
             <a
-              href="https://app.team9.ai/login"
+              href={`${APP_BASE_URL}/login`}
               className="px-4 py-2 md:px-5 md:py-2.5 text-sm md:text-base font-semibold rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-400 hover:to-orange-400 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/30"
             >
               {headerT("signIn")}
@@ -142,7 +143,7 @@ export default async function PricingPage({ locale }: { locale: string }) {
                   </li>
                 </ul>
                 <a
-                  href="https://app.team9.ai/"
+                  href={APP_BASE_URL}
                   className="w-full px-6 py-4 bg-white/10 border border-white/20 text-white text-center font-semibold rounded-xl hover:bg-white/20 hover:border-white/30 transition-all duration-300"
                 >
                   {t("getStarted")}
@@ -248,7 +249,7 @@ export default async function PricingPage({ locale }: { locale: string }) {
                   </span>
                 </div>
                 <a
-                  href="https://app.team9.ai/"
+                  href={APP_BASE_URL}
                   className="w-full px-6 py-4 bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 text-white text-center font-bold rounded-xl hover:shadow-[0_10px_30px_-10px_rgba(251,191,36,0.5)] transition-all duration-300 hover:scale-105"
                 >
                   {t("startFreeTrial")}

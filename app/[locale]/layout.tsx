@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import AppShell from "@/components/AppShell";
+import { LANDING_BASE_URL } from "@/utils/env";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -42,7 +43,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: locale === "zh" ? "zh_CN" : "en_US",
-      url: "https://team9.ai",
+      url: LANDING_BASE_URL,
       title: t("ogTitle"),
       description: t("ogDescription"),
       siteName: "Team9",
@@ -68,20 +69,20 @@ export async function generateMetadata({
         "_vTvm7VVnIcMe_uNIUoGBgUR6ePuT3RcumdCT_tGHT4",
     },
     alternates: {
-      canonical: `https://team9.ai/${locale}`,
+      canonical: `${LANDING_BASE_URL}/${locale}`,
       languages: {
-        en: "https://team9.ai",
-        zh: "https://team9.ai/zh",
-        "zh-Hant": "https://team9.ai/zh-Hant",
-        es: "https://team9.ai/es",
-        pt: "https://team9.ai/pt",
-        fr: "https://team9.ai/fr",
-        de: "https://team9.ai/de",
-        ja: "https://team9.ai/ja",
-        ko: "https://team9.ai/ko",
-        ru: "https://team9.ai/ru",
-        it: "https://team9.ai/it",
-        nl: "https://team9.ai/nl",
+        en: LANDING_BASE_URL,
+        zh: `${LANDING_BASE_URL}/zh`,
+        "zh-Hant": `${LANDING_BASE_URL}/zh-Hant`,
+        es: `${LANDING_BASE_URL}/es`,
+        pt: `${LANDING_BASE_URL}/pt`,
+        fr: `${LANDING_BASE_URL}/fr`,
+        de: `${LANDING_BASE_URL}/de`,
+        ja: `${LANDING_BASE_URL}/ja`,
+        ko: `${LANDING_BASE_URL}/ko`,
+        ru: `${LANDING_BASE_URL}/ru`,
+        it: `${LANDING_BASE_URL}/it`,
+        nl: `${LANDING_BASE_URL}/nl`,
       },
     },
   };

@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, getMessages } from "next-intl/server";
 import Head from "next/head";
+import { LANDING_BASE_URL, GA_ID, GTM_ID } from "@/utils/env";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +45,7 @@ export default async function AppShell({
     author: {
       "@type": "Organization",
       name: "Team9",
-      url: "https://team9.ai",
+      url: LANDING_BASE_URL,
     },
     keywords:
       "OpenClaw, AI agents, Moltbook, AI automation, autonomous agents, team productivity",
@@ -89,7 +90,8 @@ export default async function AppShell({
           {children}
         </NextIntlClientProvider>
       </body>
-      <GoogleAnalytics gaId="G-5KBWQ1SY1F" />
+      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
+      {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
     </html>
   );
 }

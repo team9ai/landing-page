@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import PricingPage from "@/components/PricingPage";
+import { LANDING_BASE_URL } from "@/utils/env";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations({ locale: "en", namespace: "metadata" });
@@ -8,7 +9,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t("pricingTitle"),
     description: t("pricingDescription"),
     alternates: {
-      canonical: "https://team9.ai/pricing",
+      canonical: `${LANDING_BASE_URL}/pricing`,
     },
   };
 }
