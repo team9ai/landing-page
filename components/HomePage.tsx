@@ -42,7 +42,7 @@ export default async function HomePage({ locale }: { locale: string }) {
               Team9
             </div>
             <a
-              href={`/${locale}#contact`}
+              href="#contact"
               className="text-white/60 hover:text-white text-sm md:text-base font-medium transition-colors duration-200"
             >
               {tHeader("contactUs")}
@@ -1882,7 +1882,7 @@ export default async function HomePage({ locale }: { locale: string }) {
                 </p>
                 <div className="space-y-3">
                   <a
-                    href="mailto:hello@team9.ai"
+                    href="mailto:contact@team9.ai"
                     className="flex items-center gap-3 text-white/80 hover:text-amber-400 transition-colors group"
                   >
                     <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-amber-500/20 transition-colors">
@@ -2017,15 +2017,15 @@ export default async function HomePage({ locale }: { locale: string }) {
                 </h4>
                 <ul className="space-y-2 text-white/60">
                   <li className="hover:text-amber-400 transition-colors cursor-pointer">
-                    <a href="https://discord.gg/edMATqpU" target="_blank">
+                    <a href="https://discord.gg/CAdS398wje" target="_blank">
                       {tFooter("discord")}
                     </a>
                   </li>
-                  <li className="hover:text-amber-400 transition-colors cursor-pointer">
-                    <a href="mailto:support@Weight-wave.com" target="_blank">
+                  {/* <li className="hover:text-amber-400 transition-colors cursor-pointer">
+                    <a href="mailto:contact@team9.com" target="_blank">
                       {tFooter("emailLink")}
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
