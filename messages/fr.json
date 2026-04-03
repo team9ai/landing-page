@@ -6,9 +6,10 @@
   },
   "hero": {
     "badge": "Aucune installation requise.",
-    "headline1": "Intégrez un",
-    "headline2": "à votre équipe.",
-    "headline3": "Instantanément.",
+    "headline1": "L'espace de travail",
+    "headlineHighlight": "IA le plus rapide",
+    "headline2": "",
+    "headline3": "pour les petites équipes.",
     "signUp": "S'inscrire",
     "deployOpenSource": "Deploy OpenSource",
     "startForFree": "Commencer Gratuitement",

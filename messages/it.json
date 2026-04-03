@@ -6,9 +6,10 @@
   },
   "hero": {
     "badge": "Nessuna configurazione richiesta.",
-    "headline1": "Porta un",
-    "headline2": "nel tuo team.",
-    "headline3": "Subito.",
+    "headline1": "Lo spazio di lavoro",
+    "headlineHighlight": "AI più veloce",
+    "headline2": "",
+    "headline3": "per piccoli team.",
     "signUp": "Registrati",
     "deployOpenSource": "Deploy OpenSource",
     "startForFree": "Inizia Gratis",

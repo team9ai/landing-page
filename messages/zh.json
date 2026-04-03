@@ -7,9 +7,10 @@
   "hero": {
     "badge": "开箱即用，无需配置。",
     "deployOpenSource": "部署开源版",
-    "headline1": "为你的团队引入",
+    "headline1": "最快的",
+    "headlineHighlight": "AI 工作空间",
     "headline2": "",
-    "headline3": "即刻启用。",
+    "headline3": "专为小团队打造。",
     "startForFree": "免费开始",
     "alreadyHaveAccount": "已有账户？",
     "signIn": "登录"

@@ -6,9 +6,10 @@
   },
   "hero": {
     "badge": "Keine Einrichtung erforderlich.",
-    "headline1": "Bringen Sie einen",
-    "headline2": "in Ihr Team.",
-    "headline3": "Sofort.",
+    "headline1": "Der schnellste",
+    "headlineHighlight": "AI-Workspace",
+    "headline2": "",
+    "headline3": "für kleine Teams.",
     "signUp": "Registrieren",
     "deployOpenSource": "Deploy OpenSource",
     "startForFree": "Kostenlos Starten",

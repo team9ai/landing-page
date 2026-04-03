@@ -6,9 +6,10 @@
   },
   "hero": {
     "badge": "Sin configuración necesaria.",
-    "headline1": "Incorpora un",
-    "headline2": "a tu equipo.",
-    "headline3": "Al instante.",
+    "headline1": "El espacio de trabajo",
+    "headlineHighlight": "AI más rápido",
+    "headline2": "",
+    "headline3": "para equipos pequeños.",
     "signUp": "Registrarse",
     "deployOpenSource": "Deploy OpenSource",
     "startForFree": "Comenzar Gratis",

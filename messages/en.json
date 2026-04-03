@@ -7,9 +7,10 @@
   "hero": {
     "badge": "No setup required.",
     "deployOpenSource": "Deploy OpenSource",
-    "headline1": "Bring a",
-    "headline2": "to Your Team.",
-    "headline3": "Instantly.",
+    "headline1": "The Fastest",
+    "headlineHighlight": "AI Workspace",
+    "headline2": "",
+    "headline3": "for Small Teams.",
     "startForFree": "Start For Free",
     "alreadyHaveAccount": "Already have an Account?",
     "signIn": "Sign In"

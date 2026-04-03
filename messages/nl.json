@@ -6,9 +6,10 @@
   },
   "hero": {
     "badge": "Geen installatie nodig.",
-    "headline1": "Breng een",
-    "headline2": "naar je team.",
-    "headline3": "Direct.",
+    "headline1": "De snelste",
+    "headlineHighlight": "AI-werkruimte",
+    "headline2": "",
+    "headline3": "voor kleine teams.",
     "signUp": "Registreren",
     "deployOpenSource": "Deploy OpenSource",
     "startForFree": "Gratis Beginnen",

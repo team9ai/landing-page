@@ -6,9 +6,10 @@
   },
   "hero": {
     "badge": "開箱即用，無需設定。",
-    "headline1": "為你的團隊引入",
+    "headline1": "最快的",
+    "headlineHighlight": "AI 工作空間",
     "headline2": "",
-    "headline3": "即刻啟用。",
+    "headline3": "專為小團隊打造。",
     "signUp": "立即註冊",
     "deployOpenSource": "部署開源版",
     "startForFree": "免費開始",

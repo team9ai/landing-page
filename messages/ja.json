@@ -6,9 +6,10 @@
   },
   "hero": {
     "badge": "セットアップ不要。",
-    "headline1": "あなたのチームに",
-    "headline2": "を。",
-    "headline3": "今すぐ。",
+    "headline1": "最速の",
+    "headlineHighlight": "AIワークスペース",
+    "headline2": "",
+    "headline3": "小規模チームのために。",
     "signUp": "無料で始める",
     "deployOpenSource": "Deploy OpenSource",
     "startForFree": "無料で始める",
