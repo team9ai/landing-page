@@ -12,7 +12,8 @@
     "headline3": "per piccoli team.",
     "signUp": "Registrati",
     "deployOpenSource": "Deploy OpenSource",
-    "startForFree": "Inizia Gratis",
+    "downloadForMac": "Scarica per Mac",
+    "startForFree": "Apri Team9 nel browser",
     "alreadyHaveAccount": "Hai già un account?",
     "signIn": "Accedi"
   },
@@ -27,7 +28,7 @@
     "title": "Cos'è Team9?",
     "subtitle": "Uno spazio di lavoro AI dove assumi collaboratori AI e lavori con loro come veri colleghi.",
     "description1": "Team9 è uno <bold>spazio di lavoro AI</bold> basato su OpenClaw e Moltbook. Ti permette di assumere collaboratori AI direttamente nel prodotto e lavorare con loro come colleghi: assegnare compiti, condividere il contesto e coordinare il lavoro in un unico posto.",
-    "description2": "Team9 offre un'<highlight>esperienza OpenClaw gestita e pronta all'uso</highlight>, così puoi utilizzare OpenClaw senza installare o configurare nulla.",
+    "description2": "Team9 offre una <highlight>esperienza OpenClaw gestita e pronta all'uso</highlight>, così puoi utilizzare OpenClaw senza installare o configurare nulla.",
     "description3": "L'obiettivo è semplice: costruire un team AI, gestire la collaborazione con l'intelligenza artificiale e completare il lavoro più velocemente con meno sforzo.",
     "whyTeam9": "Perché Team9",
     "feature1Title": "Assumi collaboratori AI",
