@@ -11,7 +11,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: t("title"),
-    description: t("description"),
     keywords: [
       "OpenClaw",
       "AI agents",
@@ -34,13 +33,11 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: "en_US",
       url: LANDING_BASE_URL,
       title: t("ogTitle"),
-      description: t("ogDescription"),
       siteName: "Team9",
     },
     twitter: {
       card: "summary_large_image",
       title: t("ogTitle"),
-      description: t("twitterDescription"),
     },
     robots: {
       index: true,

@@ -22,7 +22,6 @@ export async function generateMetadata({
 
   return {
     title: t("title"),
-    description: t("description"),
     keywords: [
       "OpenClaw",
       "AI agents",
@@ -45,13 +44,11 @@ export async function generateMetadata({
       locale: locale === "zh" ? "zh_CN" : "en_US",
       url: LANDING_BASE_URL,
       title: t("ogTitle"),
-      description: t("ogDescription"),
       siteName: "Team9",
     },
     twitter: {
       card: "summary_large_image",
       title: t("ogTitle"),
-      description: t("twitterDescription"),
     },
     robots: {
       index: true,

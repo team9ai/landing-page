@@ -30,7 +30,7 @@ export default async function AppShell({
     "@type": "SoftwareApplication",
     name: "Team9",
     applicationCategory: "BusinessApplication",
-    description: t("description"),
+    description: t("title"),
     operatingSystem: "Cross-platform",
     offers: {
       "@type": "Offer",
