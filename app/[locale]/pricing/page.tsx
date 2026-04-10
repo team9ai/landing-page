@@ -18,8 +18,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const isDev = process.env.NODE_ENV === "development";
+  const titlePrefix = isDev ? "[DEV] " : "";
   return {
-    title: t("pricingTitle"),
+    title: `${titlePrefix}${t("pricingTitle")}`,
     description: t("pricingDescription"),
     alternates: {
       canonical: `${LANDING_BASE_URL}/${locale}/pricing`,

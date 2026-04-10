@@ -9,8 +9,11 @@ const locale = "en";
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "metadata" });
 
+  const isDev = process.env.NODE_ENV === "development";
+  const titlePrefix = isDev ? "[DEV] " : "";
+
   return {
-    title: t("title"),
+    title: `${titlePrefix}${t("title")}`,
     keywords: [
       "OpenClaw",
       "AI agents",
