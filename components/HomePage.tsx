@@ -1,7 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import DownloadButton from "@/components/DownloadButton";
-import { APP_BASE_URL } from "@/utils/env";
+import HomeViewTracker from "@/components/home/HomeViewTracker";
+import HeaderCTAGroup from "@/components/home/HeaderCTAGroup";
+import HeroCTAGroup from "@/components/home/HeroCTAGroup";
+import FooterCTAGroup from "@/components/home/FooterCTAGroup";
 
 export default async function HomePage({ locale }: { locale: string }) {
   setRequestLocale(locale);
@@ -36,6 +38,7 @@ export default async function HomePage({ locale }: { locale: string }) {
       /> */}
 
       <div className="relative z-10 flex flex-col min-h-screen" id="ctn">
+        <HomeViewTracker />
         {/* Header */}
         <header className="sticky-header sticky top-0 z-50 px-6 py-3 md:px-12 lg:px-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
@@ -81,18 +84,7 @@ export default async function HomePage({ locale }: { locale: string }) {
           </div>
           <div className="flex items-center gap-4">
             <LanguageSwitcher locale={locale} />
-            <a
-              href={`${APP_BASE_URL}/login`}
-              className="px-4 py-2 md:px-5 md:py-2.5 text-white/70 text-sm md:text-base font-semibold hover:text-white transition-colors duration-200"
-            >
-              {tHeader("signIn")}
-            </a>
-            <a
-              href={APP_BASE_URL}
-              className="px-4 py-2 md:px-5 md:py-2.5 text-sm md:text-base font-semibold rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-400 hover:to-orange-400 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/30"
-            >
-              {tHeader("signUp")}
-            </a>
+            <HeaderCTAGroup signInLabel={tHeader("signIn")} signUpLabel={tHeader("signUp")} />
           </div>
         </header>
 
@@ -130,20 +122,10 @@ export default async function HomePage({ locale }: { locale: string }) {
 
             {/* CTA Buttons */}
             <div className="flex flex-col items-center justify-center gap-3 pt-2 animate-fade-in-up animation-delay-300">
-              <div className="flex flex-row items-center justify-center gap-4">
-                <DownloadButton
-                  label={tHero("downloadForMac")}
-                  className="group relative px-9 py-4 md:px-11 md:py-5 bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 text-white text-base md:text-lg font-bold rounded-xl md:rounded-2xl touch-action-manipulation transition-all duration-150 hover:scale-105 hover:shadow-[0_18px_50px_-14px_rgba(251,191,36,0.55)] active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/50 flex items-center gap-2 cursor-pointer"
-                />
-                <a href={APP_BASE_URL}>
-                  <button
-                    aria-label="Open Team9 in your browser"
-                    className="group relative px-9 py-4 md:px-11 md:py-5 border border-white/20 bg-white/5 backdrop-blur-sm text-white text-base md:text-lg font-bold rounded-xl md:rounded-2xl touch-action-manipulation transition-all duration-150 hover:scale-105 hover:bg-white/10 hover:border-white/30 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30 flex items-center gap-2 cursor-pointer"
-                  >
-                    {tHero("startForFree")}
-                  </button>
-                </a>
-              </div>
+              <HeroCTAGroup
+                downloadLabel={tHero("downloadForMac")}
+                startForFreeLabel={tHero("startForFree")}
+              />
 
               {/* <button
                 aria-label="View demo"
@@ -1834,25 +1816,7 @@ export default async function HomePage({ locale }: { locale: string }) {
               {tCta("subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-              <button
-                aria-label="Get started with Team9"
-                className="group relative px-12 py-6 bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 text-white text-xl font-bold rounded-full touch-action-manipulation transition-all duration-300 hover:scale-105 hover:shadow-[0_30px_80px_-20px_rgba(168,85,247,0.8)] active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/50 flex items-center gap-3"
-              >
-                {tCta("getStarted")}
-                <svg
-                  className="w-6 h-6 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
+              <FooterCTAGroup ctaLabel={tCta("getStarted")} />
               {/* <button
                 aria-label="Contact sales"
                 className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xl font-semibold rounded-full hover:bg-white/15 hover:border-white/30 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/20"

@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, getMessages } from "next-intl/server";
 import Head from "next/head";
 import { LANDING_BASE_URL, GA_ID, GTM_ID } from "@/utils/env";
+import { PostHogProvider } from "@/utils/analytics/provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -86,9 +87,11 @@ export default async function AppShell({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <PostHogProvider>
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </PostHogProvider>
       </body>
       {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
       {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}

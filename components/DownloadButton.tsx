@@ -1,6 +1,9 @@
 "use client";
 
 import { useCallback, useState } from "react";
+import { usePostHogClient } from "@/utils/analytics/provider";
+import { captureWithBridge } from "@/utils/analytics/capture";
+import { EVENTS } from "@/utils/analytics/events";
 
 interface GitHubAsset {
   name: string;
@@ -51,10 +54,14 @@ export default function DownloadButton({
   className: string;
 }) {
   const [loading, setLoading] = useState(false);
+  const client = usePostHogClient();
 
   const handleDownload = useCallback(async () => {
     if (loading) return;
     setLoading(true);
+    captureWithBridge(client, EVENTS.HOME_DOWNLOAD_BUTTON_CLICKED, {
+      button_location: "hero",
+    });
 
     try {
       const arch = detectArch();
@@ -86,7 +93,7 @@ export default function DownloadButton({
     } finally {
       setLoading(false);
     }
-  }, [loading]);
+  }, [loading, client]);
 
   return (
     <button
