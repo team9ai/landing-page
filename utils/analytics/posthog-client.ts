@@ -14,6 +14,8 @@ export function getPostHogClient(): Promise<PostHog | null> {
       posthog.init(POSTHOG_KEY, {
         api_host: POSTHOG_HOST,
         defaults: "2026-01-30",
+        // Requires team9-homepage (team9.ai) and team9 client (app.team9.ai) to share
+        // the same eTLD+1 so PostHog cookies are visible across both subdomains.
         cross_subdomain_cookie: true,
         autocapture: false,
         capture_pageview: false,
