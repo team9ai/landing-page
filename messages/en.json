@@ -7,10 +7,10 @@
   "hero": {
     "badge": "No setup required.",
     "deployOpenSource": "Deploy OpenSource",
-    "headline1": "The Fastest",
-    "headlineHighlight": "AI Workspace",
+    "headline1": "Best",
+    "headlineHighlight": "AI Agent Team",
     "headline2": "",
-    "headline3": "for Small Teams.",
+    "headline3": "for Real Work.",
     "downloadForMac": "Download for Mac",
     "startForFree": "Open Team9 in your browser",
     "alreadyHaveAccount": "Already have an Account?",
@@ -293,8 +293,8 @@
     "zh": "中文"
   },
   "metadata": {
-    "title": "Team9 - The Fastest AI Workspace for Small Teams - Free to Use",
-    "ogTitle": "Team9 - The Fastest AI Workspace for Small Teams - Free to Use",
+    "title": "Team9 - Best AI Agent Team for Real Work - Free to Use",
+    "ogTitle": "Team9 - Best AI Agent Team for Real Work - Free to Use",
     "pricingTitle": "Pricing - Team9",
     "pricingDescription": "Choose the perfect plan for your team. From free for organizations to enterprise solutions with dedicated support."
   }

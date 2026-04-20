@@ -6,10 +6,10 @@
   },
   "hero": {
     "badge": "セットアップ不要。",
-    "headline1": "最速の",
-    "headlineHighlight": "AIワークスペース",
+    "headline1": "最高の",
+    "headlineHighlight": "AIエージェントチーム",
     "headline2": "",
-    "headline3": "少人数チーム向け。",
+    "headline3": "実務のために。",
     "signUp": "無料で始める",
     "deployOpenSource": "Deploy OpenSource",
     "downloadForMac": "Mac版をダウンロード",
@@ -294,8 +294,8 @@
     "zh": "中文"
   },
   "metadata": {
-    "title": "Team9 - 小規模チームのための最速AIワークスペース - 無料で利用可能",
-    "ogTitle": "Team9 - 小規模チームのための最速AIワークスペース - 無料で利用可能",
+    "title": "Team9 - 実務のための最高のAIエージェントチーム - 無料で利用可能",
+    "ogTitle": "Team9 - 実務のための最高のAIエージェントチーム - 無料で利用可能",
     "pricingTitle": "料金プラン - Team9",
     "pricingDescription": "チームに最適なプランをお選びください。組織向けの無料プランから専任サポート付きエンタープライズソリューションまで。"
   }

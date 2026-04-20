@@ -6,10 +6,10 @@
   },
   "hero": {
     "badge": "Aucune installation requise.",
-    "headline1": "L'espace de travail",
-    "headlineHighlight": "IA le plus rapide",
+    "headline1": "La meilleure",
+    "headlineHighlight": "équipe d'agents IA",
     "headline2": "",
-    "headline3": "pour les petites équipes.",
+    "headline3": "pour le travail réel.",
     "signUp": "S'inscrire",
     "deployOpenSource": "Deploy OpenSource",
     "downloadForMac": "Télécharger pour Mac",
@@ -294,8 +294,8 @@
     "zh": "中文"
   },
   "metadata": {
-    "title": "Team9 - L'espace de travail IA le plus rapide pour les petites équipes - Gratuit",
-    "ogTitle": "Team9 - L'espace de travail IA le plus rapide pour les petites équipes - Gratuit",
+    "title": "Team9 - La meilleure équipe d'agents IA pour le travail réel - Gratuit",
+    "ogTitle": "Team9 - La meilleure équipe d'agents IA pour le travail réel - Gratuit",
     "pricingTitle": "Tarifs - Team9",
     "pricingDescription": "Choisissez le forfait idéal pour votre équipe. Du gratuit pour les organisations aux solutions entreprise avec support dédié."
   }

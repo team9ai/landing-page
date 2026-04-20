@@ -102,11 +102,10 @@ export default async function HomePage({ locale }: { locale: string }) {
             <div className="relative animate-fade-in-up">
               <h1 className="text-[clamp(2.5rem,12vw,7rem)] font-black leading-[1.1] tracking-[-0.03em]">
                 <span className="block text-white [text-shadow:_0_2px_30px_rgba(0,0,0,0.5),_0_4px_60px_rgba(0,0,0,0.3)]">
-                  {tHero("headline1")}{" "}
-                  <span className="inline-block bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent [text-shadow:none] drop-shadow-[0_2px_20px_rgba(251,191,36,0.3)]">
-                    {tHero("headlineHighlight")}
-                  </span>
-                  <span className="text-white">{" "}{tHero("headline2")}</span>
+                  {tHero("headline1")}
+                </span>
+                <span className="block bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent [text-shadow:none] drop-shadow-[0_2px_20px_rgba(251,191,36,0.3)]">
+                  {tHero("headlineHighlight")}
                 </span>
                 <span className="block text-white/90 [text-shadow:_0_2px_30px_rgba(0,0,0,0.5),_0_4px_60px_rgba(0,0,0,0.3)]">
                   {tHero("headline3")}

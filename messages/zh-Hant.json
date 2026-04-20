@@ -6,10 +6,10 @@
   },
   "hero": {
     "badge": "開箱即用，無需設定。",
-    "headline1": "最快的",
-    "headlineHighlight": "AI 工作空間",
+    "headline1": "最強的",
+    "headlineHighlight": "AI Agent 團隊",
     "headline2": "",
-    "headline3": "專為小團隊打造。",
+    "headline3": "為真實工作而生。",
     "signUp": "立即註冊",
     "deployOpenSource": "部署開源版",
     "downloadForMac": "下載 Mac 版",
@@ -294,8 +294,8 @@
     "zh": "中文"
   },
   "metadata": {
-    "title": "Team9 - 小型團隊最快的 AI 工作空間 - 免費使用",
-    "ogTitle": "Team9 - 小型團隊最快的 AI 工作空間 - 免費使用",
+    "title": "Team9 - 為真實工作而生的最強 AI Agent 團隊 - 免費使用",
+    "ogTitle": "Team9 - 為真實工作而生的最強 AI Agent 團隊 - 免費使用",
     "pricingTitle": "定價 - Team9",
     "pricingDescription": "選擇最適合你團隊的方案。從組織免費版到提供專屬支援的企業解決方案。"
   }

@@ -7,10 +7,10 @@
   "hero": {
     "badge": "开箱即用，无需配置。",
     "deployOpenSource": "部署开源版",
-    "headline1": "最快的",
-    "headlineHighlight": "AI 工作空间",
+    "headline1": "最强的",
+    "headlineHighlight": "AI Agent 团队",
     "headline2": "",
-    "headline3": "专为小团队打造。",
+    "headline3": "为真实工作而生。",
     "downloadForMac": "下载 Mac 版",
     "startForFree": "在浏览器中打开 Team9",
     "alreadyHaveAccount": "已有账户？",
@@ -293,8 +293,8 @@
     "zh": "中文"
   },
   "metadata": {
-    "title": "Team9 - 小型团队最快的 AI 工作空间 - 免费使用",
-    "ogTitle": "Team9 - 小型团队最快的 AI 工作空间 - 免费使用",
+    "title": "Team9 - 为真实工作而生的最强 AI Agent 团队 - 免费使用",
+    "ogTitle": "Team9 - 为真实工作而生的最强 AI Agent 团队 - 免费使用",
     "pricingTitle": "定价 - Team9",
     "pricingDescription": "选择最适合你团队的方案。从组织免费版到提供专属支持的企业解决方案。"
   }
