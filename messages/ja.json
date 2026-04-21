@@ -3,12 +3,15 @@
     "title": "Team9.ai — 実務のための最高の AI エージェントチーム",
     "ogTitle": "Team9.ai — 実務のための最高の AI エージェントチーム",
     "description": "Team9.ai は AI エージェントを、プロダクト・エンジニアリング・オペレーション業務のための信頼できる実行チームへと変えます。成果を割り当て、進捗を追跡し、プレイブックを再利用して、すべてのエージェントをひとつのワークスペースで管理します。",
-    "ogDescription": "Team9.ai は AI エージェントを、プロダクト・エンジニアリング・オペレーション業務のための信頼できる実行チームへと変えます。"
+    "ogDescription": "Team9.ai は AI エージェントを、プロダクト・エンジニアリング・オペレーション業務のための信頼できる実行チームへと変えます。",
+    "pricingTitle": "料金プラン - Team9",
+    "pricingDescription": "チームに最適なプランをお選びください。組織向けの無料プランから専任サポート付きエンタープライズソリューションまで。"
   },
   "header": {
     "signIn": "サインイン",
     "githubAriaLabel": "GitHub 上の Team9.ai",
-    "xAriaLabel": "X 上の Team9.ai"
+    "xAriaLabel": "X 上の Team9.ai",
+    "contactUs": "お問い合わせ"
   },
   "hero": {
     "headlineLine1": "実務のための",
@@ -125,5 +128,42 @@
     "copyright": "© 2026 Team9.ai. All Rights Reserved.",
     "xAriaLabel": "X 上の Team9.ai",
     "githubAriaLabel": "GitHub 上の Team9.ai"
+  },
+  "pricing": {
+    "title": "シンプルで透明な料金体系",
+    "subtitle": "チームに合ったプランをお選びください。無料から始めて、成長に合わせてスケール。",
+    "freeTitle": "Free",
+    "freeDesc": "はじめての組織向け",
+    "freePrice": "$0",
+    "perMonth": "/月",
+    "freeFeature1": "組織向けに無料",
+    "freeFeature2": "基本的なAIワークスペースアクセス",
+    "freeFeature3": "コミュニティサポート",
+    "getStarted": "始める",
+    "proTitle": "Pro",
+    "proDesc": "スケールアップ準備が整ったチーム向け",
+    "proPrice": "$19",
+    "mostPopular": "一番人気",
+    "proFeature1": "Freeの全機能を含む",
+    "proFeature2Agent": "OpenClaw Agent 1台",
+    "proFeature2Suffix": "インスタンス",
+    "proFeature3": "優先サポート",
+    "proFeature4": "高度なコラボレーションツール",
+    "freeDuringBeta": "ベータ期間中は無料",
+    "startFreeTrial": "無料トライアルを開始",
+    "enterpriseTitle": "Enterprise",
+    "enterpriseDesc": "大規模組織向け",
+    "enterprisePrice": "お問い合わせ",
+    "enterpriseFeature1": "Proの全機能を含む",
+    "enterpriseFeature2": "無制限のOpenClaw Agent",
+    "enterpriseFeature3": "専任サポート＆SLA",
+    "enterpriseFeature4": "カスタムインテグレーション",
+    "enterpriseFeature5": "オンプレミスデプロイメント",
+    "contactSales": "営業に問い合わせ",
+    "faqQuestion": "どのプランが最適かお悩みですか？",
+    "faqLink": "チームにお気軽にご相談ください",
+    "footerCopyright": "2026 Weight Wave Inc. All rights reserved.",
+    "footerHome": "ホーム",
+    "footerContact": "お問い合わせ"
   }
 }

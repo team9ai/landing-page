@@ -3,12 +3,15 @@
     "title": "Team9.ai — Het beste AI-agentteam voor echt werk",
     "ogTitle": "Team9.ai — Het beste AI-agentteam voor echt werk",
     "description": "Team9.ai maakt van AI-agents een betrouwbaar uitvoeringsteam voor product-, ingenieurs- en operationeel werk. Wijs resultaten toe, volg de voortgang, hergebruik playbooks en houd elke AI-agent verantwoordelijk in één werkruimte.",
-    "ogDescription": "Team9.ai maakt van AI-agents een betrouwbaar uitvoeringsteam voor product-, ingenieurs- en operationeel werk."
+    "ogDescription": "Team9.ai maakt van AI-agents een betrouwbaar uitvoeringsteam voor product-, ingenieurs- en operationeel werk.",
+    "pricingTitle": "Prijzen - Team9",
+    "pricingDescription": "Kies het perfecte plan voor je team. Van gratis voor organisaties tot enterprise-oplossingen met toegewijde ondersteuning."
   },
   "header": {
     "signIn": "Inloggen",
     "githubAriaLabel": "Team9.ai op GitHub",
-    "xAriaLabel": "Team9.ai op X"
+    "xAriaLabel": "Team9.ai op X",
+    "contactUs": "Neem contact op"
   },
   "hero": {
     "headlineLine1": "Het beste AI-agentteam",
@@ -125,5 +128,42 @@
     "copyright": "© 2026 Team9.ai. Alle rechten voorbehouden.",
     "xAriaLabel": "Team9.ai op X",
     "githubAriaLabel": "Team9.ai op GitHub"
+  },
+  "pricing": {
+    "title": "Eenvoudige, transparante prijzen",
+    "subtitle": "Kies het plan dat bij je team past. Begin gratis en schaal mee naarmate je groeit.",
+    "freeTitle": "Gratis",
+    "freeDesc": "Voor organisaties die net beginnen",
+    "freePrice": "$0",
+    "perMonth": "/maand",
+    "freeFeature1": "Gratis voor organisaties",
+    "freeFeature2": "Basistoegang tot AI-werkruimte",
+    "freeFeature3": "Community-ondersteuning",
+    "getStarted": "Aan de slag",
+    "proTitle": "Pro",
+    "proDesc": "Voor teams die willen opschalen",
+    "proPrice": "$19",
+    "mostPopular": "Populairst",
+    "proFeature1": "Alles in Gratis",
+    "proFeature2Agent": "1 OpenClaw Agent",
+    "proFeature2Suffix": "-instantie",
+    "proFeature3": "Prioriteitsondersteuning",
+    "proFeature4": "Geavanceerde samenwerkingstools",
+    "freeDuringBeta": "Momenteel gratis tijdens de bèta",
+    "startFreeTrial": "Start gratis proefperiode",
+    "enterpriseTitle": "Enterprise",
+    "enterpriseDesc": "Voor grote organisaties",
+    "enterprisePrice": "Op maat",
+    "enterpriseFeature1": "Alles in Pro",
+    "enterpriseFeature2": "Onbeperkt aantal OpenClaw Agents",
+    "enterpriseFeature3": "Toegewijd support en SLA",
+    "enterpriseFeature4": "Aangepaste integraties",
+    "enterpriseFeature5": "On-premise deployment",
+    "contactSales": "Neem contact op met sales",
+    "faqQuestion": "Vragen over welk plan bij je past?",
+    "faqLink": "Neem contact op met ons team",
+    "footerCopyright": "2026 Weight Wave Inc. Alle rechten voorbehouden.",
+    "footerHome": "Home",
+    "footerContact": "Contact"
   }
 }

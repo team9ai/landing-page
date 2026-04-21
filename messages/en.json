@@ -3,12 +3,15 @@
     "title": "Team9.ai — Best AI Agent Team for Real Work",
     "ogTitle": "Team9.ai — Best AI Agent Team for Real Work",
     "description": "Team9.ai turns AI agents into a dependable execution team for product, engineering, and operations work. Assign outcomes, track progress, reuse playbooks, and keep every agent accountable in one workspace.",
-    "ogDescription": "Team9.ai turns AI agents into a dependable execution team for product, engineering, and operations work."
+    "ogDescription": "Team9.ai turns AI agents into a dependable execution team for product, engineering, and operations work.",
+    "pricingTitle": "Pricing - Team9",
+    "pricingDescription": "Choose the perfect plan for your team. From free for organizations to enterprise solutions with dedicated support."
   },
   "header": {
     "signIn": "Sign in",
     "githubAriaLabel": "Team9.ai on GitHub",
-    "xAriaLabel": "Team9.ai on X"
+    "xAriaLabel": "Team9.ai on X",
+    "contactUs": "Contact Us"
   },
   "hero": {
     "headlineLine1": "Best AI Agent Team",
@@ -125,5 +128,42 @@
     "copyright": "© 2026 Team9.ai. All rights reserved.",
     "xAriaLabel": "Team9.ai on X",
     "githubAriaLabel": "Team9.ai on GitHub"
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that fits your team. Start free and scale as you grow.",
+    "freeTitle": "Free",
+    "freeDesc": "For organizations getting started",
+    "freePrice": "$0",
+    "perMonth": "/month",
+    "freeFeature1": "Free for organizations",
+    "freeFeature2": "Basic AI workspace access",
+    "freeFeature3": "Community support",
+    "getStarted": "Get Started",
+    "proTitle": "Pro",
+    "proDesc": "For teams ready to scale",
+    "proPrice": "$19",
+    "mostPopular": "Most Popular",
+    "proFeature1": "Everything in Free",
+    "proFeature2Agent": "1 OpenClaw Agent",
+    "proFeature2Suffix": " instance",
+    "proFeature3": "Priority support",
+    "proFeature4": "Advanced collaboration tools",
+    "freeDuringBeta": "Currently Free During Beta",
+    "startFreeTrial": "Start Free Trial",
+    "enterpriseTitle": "Enterprise",
+    "enterpriseDesc": "For large organizations",
+    "enterprisePrice": "Custom",
+    "enterpriseFeature1": "Everything in Pro",
+    "enterpriseFeature2": "Unlimited OpenClaw Agents",
+    "enterpriseFeature3": "Dedicated support & SLA",
+    "enterpriseFeature4": "Custom integrations",
+    "enterpriseFeature5": "On-premise deployment",
+    "contactSales": "Contact Sales",
+    "faqQuestion": "Have questions about which plan is right for you?",
+    "faqLink": "Get in touch with our team",
+    "footerCopyright": "2026 Weight Wave Inc. All rights reserved.",
+    "footerHome": "Home",
+    "footerContact": "Contact"
   }
 }

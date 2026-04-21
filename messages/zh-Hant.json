@@ -3,12 +3,15 @@
     "title": "Team9.ai — 面向真實工作的最佳 AI 智能體團隊",
     "ogTitle": "Team9.ai — 面向真實工作的最佳 AI 智能體團隊",
     "description": "Team9.ai 將 AI 智能體打造成可靠的執行團隊，服務於產品、工程和營運工作。分配成果、追蹤進度、複用操作手冊，並在一個工作空間內讓每個智能體保持可追責。",
-    "ogDescription": "Team9.ai 將 AI 智能體打造成可靠的執行團隊，服務於產品、工程和營運工作。"
+    "ogDescription": "Team9.ai 將 AI 智能體打造成可靠的執行團隊，服務於產品、工程和營運工作。",
+    "pricingTitle": "定價 - Team9",
+    "pricingDescription": "選擇最適合你團隊的方案。從組織免費版到提供專屬支援的企業解決方案。"
   },
   "header": {
     "signIn": "登入",
     "githubAriaLabel": "Team9.ai 的 GitHub 首頁",
-    "xAriaLabel": "Team9.ai 的 X 首頁"
+    "xAriaLabel": "Team9.ai 的 X 首頁",
+    "contactUs": "聯絡我們"
   },
   "hero": {
     "headlineLine1": "面向真實工作的",
@@ -125,5 +128,42 @@
     "copyright": "© 2026 Team9.ai. 保留所有權利。",
     "xAriaLabel": "Team9.ai 的 X 首頁",
     "githubAriaLabel": "Team9.ai 的 GitHub 首頁"
+  },
+  "pricing": {
+    "title": "簡單透明的定價",
+    "subtitle": "選擇適合你團隊的方案。免費起步，按需擴展。",
+    "freeTitle": "免費版",
+    "freeDesc": "適合剛起步的組織",
+    "freePrice": "$0",
+    "perMonth": "/月",
+    "freeFeature1": "組織免費使用",
+    "freeFeature2": "基礎 AI 工作空間存取",
+    "freeFeature3": "社群支援",
+    "getStarted": "開始使用",
+    "proTitle": "專業版",
+    "proDesc": "適合準備擴展的團隊",
+    "proPrice": "$19",
+    "mostPopular": "最受歡迎",
+    "proFeature1": "包含免費版全部功能",
+    "proFeature2Agent": "1 個 OpenClaw Agent",
+    "proFeature2Suffix": " 實例",
+    "proFeature3": "優先支援",
+    "proFeature4": "進階協作工具",
+    "freeDuringBeta": "Beta 期間免費使用",
+    "startFreeTrial": "開始免費試用",
+    "enterpriseTitle": "企業版",
+    "enterpriseDesc": "適合大型組織",
+    "enterprisePrice": "客製",
+    "enterpriseFeature1": "包含專業版全部功能",
+    "enterpriseFeature2": "無限 OpenClaw Agent",
+    "enterpriseFeature3": "專屬支援和 SLA",
+    "enterpriseFeature4": "客製整合",
+    "enterpriseFeature5": "地端部署",
+    "contactSales": "聯絡業務",
+    "faqQuestion": "不確定哪個方案適合你？",
+    "faqLink": "聯絡我們的團隊",
+    "footerCopyright": "2026 Weight Wave Inc. 保留所有權利。",
+    "footerHome": "首頁",
+    "footerContact": "聯絡"
   }
 }

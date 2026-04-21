@@ -3,12 +3,15 @@
     "title": "Team9.ai — Il miglior team di agenti IA per il lavoro reale",
     "ogTitle": "Team9.ai — Il miglior team di agenti IA per il lavoro reale",
     "description": "Team9.ai trasforma gli agenti IA in un team di esecuzione affidabile per il lavoro di prodotto, ingegneria e operazioni. Assegna risultati, monitora i progressi, riutilizza playbook e mantieni ogni agente responsabile in un workspace.",
-    "ogDescription": "Team9.ai trasforma gli agenti IA in un team di esecuzione affidabile per il lavoro di prodotto, ingegneria e operazioni."
+    "ogDescription": "Team9.ai trasforma gli agenti IA in un team di esecuzione affidabile per il lavoro di prodotto, ingegneria e operazioni.",
+    "pricingTitle": "Prezzi - Team9",
+    "pricingDescription": "Scegli il piano perfetto per il tuo team. Dal piano gratuito per organizzazioni alle soluzioni enterprise con supporto dedicato."
   },
   "header": {
     "signIn": "Accedi",
     "githubAriaLabel": "Team9.ai su GitHub",
-    "xAriaLabel": "Team9.ai su X"
+    "xAriaLabel": "Team9.ai su X",
+    "contactUs": "Contattaci"
   },
   "hero": {
     "headlineLine1": "Il miglior team di agenti IA",
@@ -125,5 +128,42 @@
     "copyright": "© 2026 Team9.ai. Tutti i diritti riservati.",
     "xAriaLabel": "Team9.ai su X",
     "githubAriaLabel": "Team9.ai su GitHub"
+  },
+  "pricing": {
+    "title": "Prezzi semplici e trasparenti",
+    "subtitle": "Scegli il piano adatto al tuo team. Inizia gratis e scala man mano che cresci.",
+    "freeTitle": "Gratuito",
+    "freeDesc": "Per le organizzazioni che iniziano",
+    "freePrice": "$0",
+    "perMonth": "/mese",
+    "freeFeature1": "Gratuito per le organizzazioni",
+    "freeFeature2": "Accesso base allo spazio di lavoro AI",
+    "freeFeature3": "Supporto della community",
+    "getStarted": "Inizia",
+    "proTitle": "Pro",
+    "proDesc": "Per i team pronti a scalare",
+    "proPrice": "$19",
+    "mostPopular": "Il più popolare",
+    "proFeature1": "Tutto del piano Gratuito",
+    "proFeature2Agent": "1 agente OpenClaw",
+    "proFeature2Suffix": "",
+    "proFeature3": "Supporto prioritario",
+    "proFeature4": "Strumenti avanzati di collaborazione",
+    "freeDuringBeta": "Attualmente gratuito durante la beta",
+    "startFreeTrial": "Inizia la prova gratuita",
+    "enterpriseTitle": "Enterprise",
+    "enterpriseDesc": "Per grandi organizzazioni",
+    "enterprisePrice": "Personalizzato",
+    "enterpriseFeature1": "Tutto del piano Pro",
+    "enterpriseFeature2": "Agenti OpenClaw illimitati",
+    "enterpriseFeature3": "Supporto dedicato e SLA",
+    "enterpriseFeature4": "Integrazioni personalizzate",
+    "enterpriseFeature5": "Deployment on-premise",
+    "contactSales": "Contatta il reparto vendite",
+    "faqQuestion": "Hai domande su quale piano sia il più adatto a te?",
+    "faqLink": "Contatta il nostro team",
+    "footerCopyright": "2026 Weight Wave Inc. Tutti i diritti riservati.",
+    "footerHome": "Home",
+    "footerContact": "Contatti"
   }
 }
