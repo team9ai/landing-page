@@ -105,6 +105,8 @@ export default async function AppShell({
 
   return (
     <html lang={locale} className="dark" style={{ colorScheme: "dark" }}>
+      {/* App Router renders <head> as static html; next/head is deprecated here. */}
+      {/* eslint-disable-next-line @next/next/no-head-element */}
       <head>
         <link rel="preconnect" href="https://us.i.posthog.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
