@@ -10,6 +10,7 @@ import {
 import type { PostHog } from "posthog-js";
 import { getPostHogClient } from "./posthog-client";
 import { captureAcquisitionOnce } from "./acquisition";
+import { captureGclid } from "./gclid";
 
 const PostHogContext = createContext<PostHog | null>(null);
 
@@ -21,7 +22,10 @@ export function PostHogProvider({ children }: { children: ReactNode }) {
     void getPostHogClient().then((resolved) => {
       if (!mounted) return;
       setClient(resolved);
-      if (resolved) captureAcquisitionOnce(resolved);
+      if (resolved) {
+        captureAcquisitionOnce(resolved);
+        captureGclid(resolved);
+      }
     });
     return () => {
       mounted = false;
