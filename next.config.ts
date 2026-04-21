@@ -5,8 +5,12 @@ import { withSentryConfig } from "@sentry/nextjs";
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: 'export'
+  output: 'export',
+  // Static export can't run the runtime image optimizer; homepage assets are
+  // already pre-compressed via scripts/prepare-homepage-assets.mjs.
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default withSentryConfig(withNextIntl(nextConfig), {
