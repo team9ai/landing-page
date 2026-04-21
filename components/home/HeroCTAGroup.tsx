@@ -8,17 +8,20 @@ import { APP_BASE_URL } from "@/utils/env";
 
 interface Props {
   downloadLabel: string;
-  startForFreeLabel: string;
+  signUpWithGoogleLabel: string;
 }
 
-export default function HeroCTAGroup({ downloadLabel, startForFreeLabel }: Props) {
+export default function HeroCTAGroup({
+  downloadLabel,
+  signUpWithGoogleLabel,
+}: Props) {
   const client = usePostHogClient();
 
   return (
-    <div className="flex flex-row items-center justify-center gap-4">
+    <>
       <DownloadButton
         label={downloadLabel}
-        className="group relative px-9 py-4 md:px-11 md:py-5 bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 text-white text-base md:text-lg font-bold rounded-xl md:rounded-2xl touch-action-manipulation transition-all duration-150 hover:scale-105 hover:shadow-[0_18px_50px_-14px_rgba(251,191,36,0.55)] active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/50 flex items-center gap-2 cursor-pointer"
+        className="inline-flex items-center justify-center gap-2 rounded-[12px] bg-white px-5 py-3 text-[14px] font-semibold text-[#0a0d12] transition-colors hover:bg-white/92 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 disabled:opacity-60"
       />
       <a
         href={APP_BASE_URL}
@@ -27,36 +30,16 @@ export default function HeroCTAGroup({ downloadLabel, startForFreeLabel }: Props
             button_location: "hero",
           });
         }}
+        className="inline-flex items-center justify-center gap-2 rounded-[12px] border border-white/18 bg-black/16 px-5 py-3 text-[14px] font-semibold text-white backdrop-blur-sm transition-colors hover:bg-black/24 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
       >
-        <button
-          aria-label={startForFreeLabel}
-          className="group relative px-9 py-4 md:px-11 md:py-5 border border-white/25 bg-white/9 backdrop-blur-md text-white text-base md:text-lg font-bold rounded-xl md:rounded-2xl touch-action-manipulation transition-all duration-150 hover:scale-105 hover:bg-white/14 hover:border-white/40 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30 flex items-center gap-2.5 cursor-pointer shadow-[0_6px_24px_-10px_rgba(0,0,0,0.55)]"
-        >
-          <svg
-            className="w-5 h-5 md:w-5.5 md:h-5.5"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              fill="#4285F4"
-              d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-            />
-            <path
-              fill="#34A853"
-              d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-            />
-            <path
-              fill="#FBBC05"
-              d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.43.35-2.1V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.83z"
-            />
-            <path
-              fill="#EA4335"
-              d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.83c.87-2.6 3.3-4.52 6.16-4.52z"
-            />
-          </svg>
-          {startForFreeLabel}
-        </button>
+        <svg viewBox="0 0 24 24" className="size-4" aria-hidden="true">
+          <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.24 1.54-1.8 4.5-5.5 4.5-3.31 0-6-2.69-6-6s2.69-6 6-6c1.88 0 3.13.8 3.85 1.49l2.62-2.54C16.82 4.01 14.64 3.2 12 3.2 7.03 3.2 3 7.23 3 12.2s4.03 9 9 9c5.19 0 8.62-3.65 8.62-8.8 0-.59-.06-1.04-.14-1.48H12Z" />
+          <path fill="#4285F4" d="M3.98 7.54 7.2 9.9A5.41 5.41 0 0 1 12 6.6c1.88 0 3.13.8 3.85 1.49l2.62-2.54C16.82 4.01 14.64 3.2 12 3.2c-3.46 0-6.44 1.99-8.02 4.34Z" />
+          <path fill="#FBBC05" d="M3 12.2c0 1.58.38 3.07 1.06 4.38l3.58-2.76a5.4 5.4 0 0 1-.28-1.62c0-.56.1-1.1.28-1.62L4.06 7.82A8.94 8.94 0 0 0 3 12.2Z" />
+          <path fill="#34A853" d="M12 21.2c2.44 0 4.48-.8 5.98-2.18l-3.48-2.7c-.94.65-2.14 1.08-3.5 1.08-2.7 0-5-1.82-5.82-4.28L4.06 16.58A9 9 0 0 0 12 21.2Z" />
+        </svg>
+        {signUpWithGoogleLabel}
       </a>
-    </div>
+    </>
   );
 }
