@@ -237,7 +237,6 @@ export default async function HomePage() {
                     <div
                       key={block.id}
                       id={block.id}
-                      data-index={idx}
                       className={`py-20 lg:py-28 ${idx < featureBlocks.length - 1 ? "border-b border-[#0a0d12]/8" : ""}`}
                     >
                       <h2 className="font-[family-name:var(--font-serif)] text-[2.6rem] leading-[1.05] tracking-[-0.03em] text-[#0a0d12] whitespace-pre-line sm:text-[3.4rem] lg:text-[4.2rem]">
@@ -389,7 +388,7 @@ export default async function HomePage() {
               <div className="mt-14 divide-y divide-[#0a0d12]/10 sm:mt-16">
                 {faqItems.map((item, i) => (
                   <details key={i} className="group" name="faq">
-                    <summary className="flex w-full cursor-pointer list-none items-start justify-between gap-4 py-6 text-left [&::-webkit-details-marker]:hidden">
+                    <summary className="flex w-full cursor-pointer list-none items-start justify-between gap-4 py-6 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0a0d12]/40 rounded-md [&::-webkit-details-marker]:hidden">
                       <span className="text-[16px] font-semibold leading-snug text-[#0a0d12] sm:text-[17px]">
                         {item.q}
                       </span>

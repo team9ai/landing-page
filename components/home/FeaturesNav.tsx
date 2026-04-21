@@ -59,7 +59,7 @@ export default function FeaturesNav({ items }: Props) {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className={`group flex items-center gap-3 rounded-lg px-4 py-3 text-left text-[11px] font-semibold tracking-[0.12em] transition-colors ${
+              className={`group flex items-center gap-3 rounded-lg px-4 py-3 text-left text-[11px] font-semibold tracking-[0.12em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0a0d12]/40 ${
                 active
                   ? "text-[#0a0d12]"
                   : "text-[#0a0d12]/36 hover:text-[#0a0d12]/60"

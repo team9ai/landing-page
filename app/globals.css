@@ -40,3 +40,14 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Hide the autoplay hero video for users who prefer reduced motion */
+  video[autoplay] {
+    display: none;
+  }
+  /* Also hide the preview wrapper to avoid an empty bordered box */
+  #preview {
+    display: none;
+  }
+}
