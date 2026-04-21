@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // One-off: copy + compress reference assets into public/.
 // Safe to re-run; outputs are deterministic (within JPEG/PNG encoder stability).
+// sharp is kept as a devDependency intentionally: it is already a transitive dep of Next.js
+// and is standard for image tooling (plan Step 7 fallback — no extra prod bundle cost).
 import { copyFile, mkdir, rm } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -15,31 +17,26 @@ const BRAND_OUT = path.join(REPO, "public", "brand");
 await mkdir(IMG_OUT, { recursive: true });
 await mkdir(BRAND_OUT, { recursive: true });
 
-// 1. Hero background (JPEG quality 75, LCP image; downscaled to max 1920px wide)
+// 1. Hero background (LCP image; downscaled to max 1920px wide)
+// reduced from plan q85 to q75 + 1920px cap to meet ≤300 KB budget
 await sharp(path.join(REF, "assets", "002.jpg"))
   .resize({ width: 1920, withoutEnlargement: true })
   .jpeg({ quality: 75, mozjpeg: true })
   .toFile(path.join(IMG_OUT, "hero-bg.jpg"));
 
 // 2. Four feature backgrounds (JPEG quality 50, downscaled to max 1440px wide)
-// feature-bg-3 uses extra aggressive compression (quality 40, 1280px) due to high visual complexity
+// feature-bg-3: reduced from plan q82 to q40 + 1280px cap to meet ≤300 KB budget (high visual complexity)
 const featureBgSettings = {
   "feature-bg.jpg":   { width: 1440, quality: 50 },
   "feature-bg-2.jpg": { width: 1440, quality: 50 },
-  "feature-bg-3.jpg": { width: 1280, quality: 40 },
+  "feature-bg-3.jpg": { width: 1280, quality: 40 }, // reduced from plan q82 to q40 + 1280px cap to meet ≤300 KB budget
   "feature-bg-4.jpg": { width: 1440, quality: 50 },
 };
-for (const [src, dst] of [
-  ["feature-bg.jpg", "feature-bg.jpg"],
-  ["feature-bg-2.jpg", "feature-bg-2.jpg"],
-  ["feature-bg-3.jpg", "feature-bg-3.jpg"],
-  ["feature-bg-4.jpg", "feature-bg-4.jpg"],
-]) {
-  const { width, quality } = featureBgSettings[src];
-  await sharp(path.join(REF, "assets", src))
+for (const [name, { width, quality }] of Object.entries(featureBgSettings)) {
+  await sharp(path.join(REF, "assets", name))
     .resize({ width, withoutEnlargement: true })
     .jpeg({ quality, mozjpeg: true })
-    .toFile(path.join(IMG_OUT, dst));
+    .toFile(path.join(IMG_OUT, name));
 }
 
 // 3. Four product PNG screenshots (PNG quality 85, compression 9)
@@ -70,11 +67,15 @@ execFileSync("ffmpeg", [
   "-q:v", "2",
   posterTmp,
 ]);
-await sharp(posterTmp)
-  .resize({ width: 1920, withoutEnlargement: true })
-  .jpeg({ quality: 75, mozjpeg: true })
-  .toFile(path.join(IMG_OUT, "team9-preview-poster.jpg"));
-await rm(posterTmp);
+try {
+  // reduced from plan q85 to q75 + 1920px cap to meet ≤300 KB budget
+  await sharp(posterTmp)
+    .resize({ width: 1920, withoutEnlargement: true })
+    .jpeg({ quality: 75, mozjpeg: true })
+    .toFile(path.join(IMG_OUT, "team9-preview-poster.jpg"));
+} finally {
+  await rm(posterTmp, { force: true });
+}
 
 // 6. OG image (1200x630 from landing-hero.png, JPEG q88)
 await sharp(path.join(REF, "images", "landing-hero.png"))
