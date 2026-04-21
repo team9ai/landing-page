@@ -2,7 +2,7 @@ import { Geist, Geist_Mono, Instrument_Serif, Noto_Serif_SC } from "next/font/go
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
-import { LANDING_BASE_URL, GA_ID, GTM_ID } from "@/utils/env";
+import { LANDING_BASE_URL, ASSET_CDN_URL, GA_ID, GTM_ID } from "@/utils/env";
 import { PostHogProvider } from "@/utils/analytics/provider";
 
 const geistSans = Geist({
@@ -40,8 +40,8 @@ export default async function AppShell({
   const tMeta = await getTranslations({ locale, namespace: "metadata" });
   const tFaq = await getTranslations({ locale, namespace: "faq" });
 
-  // Duration obtained from ffprobe on public/images/team9-preview.mp4 (Task 1).
-  // If the mp4 is swapped, re-run ffprobe and update this value.
+  // Duration obtained from ffprobe on the Hero video (currently hosted on R2).
+  // If the video is swapped, re-run ffprobe on the new file and update this.
   const VIDEO_DURATION_ISO = "PT12S";
 
   const jsonLd = {
@@ -85,7 +85,7 @@ export default async function AppShell({
         description:
           "Humans and agents coordinating work in a single Team9.ai workspace",
         thumbnailUrl: `${LANDING_BASE_URL}/images/team9-preview-poster.jpg`,
-        contentUrl: `${LANDING_BASE_URL}/images/team9-preview.mp4`,
+        contentUrl: `${ASSET_CDN_URL}/team9-preview.mp4`,
         uploadDate: "2026-01-15",
         duration: VIDEO_DURATION_ISO,
       },

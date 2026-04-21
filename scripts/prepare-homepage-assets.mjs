@@ -51,11 +51,10 @@ for (const name of [
     .toFile(path.join(IMG_OUT, name));
 }
 
-// 4. Preview video (copy as-is, no re-encode)
-await copyFile(
-  path.join(REF, "assets", "team9-preview.mp4"),
-  path.join(IMG_OUT, "team9-preview.mp4"),
-);
+// 4. Preview video: NOT copied into public/. The mp4 (~37 MB) exceeds
+// Cloudflare Pages' 25 MB per-file limit and is served from Cloudflare R2
+// via ASSET_CDN_URL (see utils/env.ts). Upload the mp4 to R2 manually if
+// it changes.
 
 // 5. Video poster (extract frame 0 via ffmpeg, then JPEG q85)
 const posterTmp = path.join(IMG_OUT, "_poster_tmp.png");
@@ -93,12 +92,13 @@ for (const name of ["anthropic.png", "gemini.svg", "kimi.ico", "zai.svg"]) {
   }
 }
 
-// 8. Probe the mp4 duration for JSON-LD (prints to stdout for operator to read)
+// 8. Probe the reference mp4 duration for JSON-LD (prints to stdout for operator).
+// Reads from the reference source since the mp4 is no longer copied into public/.
 const probe = execFileSync("ffprobe", [
   "-v", "error",
   "-show_entries", "format=duration",
   "-of", "default=noprint_wrappers=1:nokey=1",
-  path.join(IMG_OUT, "team9-preview.mp4"),
+  path.join(REF, "assets", "team9-preview.mp4"),
 ]).toString().trim();
 console.log(`video_duration_seconds=${probe}`);
 

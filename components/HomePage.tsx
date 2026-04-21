@@ -7,7 +7,7 @@ import HeroCTAGroup from "@/components/home/HeroCTAGroup";
 import FooterCTAGroup from "@/components/home/FooterCTAGroup";
 import FeaturesNav from "@/components/home/FeaturesNav";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { APP_BASE_URL } from "@/utils/env";
+import { APP_BASE_URL, ASSET_CDN_URL } from "@/utils/env";
 
 const GITHUB_URL = "https://github.com/team9ai/team9";
 const X_URL = "https://x.com/team9_ai";
@@ -219,7 +219,7 @@ export default async function HomePage() {
                         style={{ aspectRatio: "3840 / 1916", background: "#000" }}
                         aria-label={tHero("videoAriaLabel")}
                       >
-                        <source src="/images/team9-preview.mp4" type="video/mp4" />
+                        <source src={`${ASSET_CDN_URL}/team9-preview.mp4`} type="video/mp4" />
                       </video>
                     </div>
                   </div>
