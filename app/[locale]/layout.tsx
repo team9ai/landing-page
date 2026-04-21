@@ -25,33 +25,49 @@ export async function generateMetadata({
 
   return {
     title: `${titlePrefix}${t("title")}`,
+    description: t("description"),
     keywords: [
-      "OpenClaw",
       "AI agents",
-      "Moltbook",
-      "Team9",
-      "AI automation",
-      "AI assistant",
+      "AI agent team",
+      "AI workspace",
+      "AI workflow",
       "autonomous agents",
-      "agent ecosystem",
-      "AI collaboration",
-      "enterprise AI",
-      "team productivity",
-      "AI social network",
+      "AI operations",
+      "Team9.ai",
     ],
     authors: [{ name: "Team9" }],
     creator: "Team9",
     publisher: "Team9",
     openGraph: {
       type: "website",
-      locale: locale === "zh" ? "zh_CN" : "en_US",
-      url: LANDING_BASE_URL,
+      locale:
+        locale === "zh"
+          ? "zh_CN"
+          : locale === "zh-Hant"
+            ? "zh_TW"
+            : locale === "ja"
+              ? "ja_JP"
+              : locale === "ko"
+                ? "ko_KR"
+                : "en_US",
+      url: `${LANDING_BASE_URL}/${locale}`,
       title: t("ogTitle"),
-      siteName: "Team9",
+      description: t("ogDescription"),
+      siteName: "Team9.ai",
+      images: [
+        {
+          url: `${LANDING_BASE_URL}/images/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "Team9.ai",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t("ogTitle"),
+      description: t("ogDescription"),
+      images: [`${LANDING_BASE_URL}/images/og-image.jpg`],
     },
     robots: {
       index: true,
