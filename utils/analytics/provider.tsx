@@ -11,6 +11,7 @@ import type { PostHog } from "posthog-js";
 import { getPostHogClient } from "./posthog-client";
 import { captureAcquisitionOnce } from "./acquisition";
 import { captureGclid } from "./gclid";
+import { captureRdtCid } from "./rdt_cid";
 
 const PostHogContext = createContext<PostHog | null>(null);
 
@@ -25,6 +26,7 @@ export function PostHogProvider({ children }: { children: ReactNode }) {
       if (resolved) {
         captureAcquisitionOnce(resolved);
         captureGclid(resolved);
+        captureRdtCid(resolved);
       }
     });
     return () => {
