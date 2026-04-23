@@ -1,7 +1,7 @@
 "use client";
 
 import { usePostHogClient } from "@/utils/analytics/provider";
-import { captureWithBridge } from "@/utils/analytics/capture";
+import { captureAndNavigate } from "@/utils/analytics/capture";
 import { EVENTS } from "@/utils/analytics/events";
 import { APP_BASE_URL } from "@/utils/env";
 
@@ -15,8 +15,8 @@ export default function FooterCTAGroup({ ctaLabel }: Props) {
   return (
     <a
       href={APP_BASE_URL}
-      onClick={() => {
-        captureWithBridge(client, EVENTS.HOME_SIGNUP_BUTTON_CLICKED, {
+      onClick={(e) => {
+        captureAndNavigate(e, client, EVENTS.HOME_SIGNUP_BUTTON_CLICKED, {
           button_location: "footer",
         });
       }}
