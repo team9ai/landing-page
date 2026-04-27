@@ -1,5 +1,8 @@
 export const LANDING_BASE_URL = process.env.NEXT_PUBLIC_LANDING_BASE_URL || "https://team9.ai";
 export const APP_BASE_URL = process.env.NEXT_PUBLIC_APP_BASE_URL || "https://app.team9.ai";
+// Public Google OAuth client ID, shared with the app so a Google ID token
+// minted on the homepage can be exchanged for a session at app.team9.ai.
+export const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || "";
 // Cloudflare R2 public domain for large static assets (video, etc.) that
 // exceed the Cloudflare Pages 25 MB per-file limit.
 export const ASSET_CDN_URL = process.env.NEXT_PUBLIC_ASSET_CDN_URL || "https://cdn.team9.ai";

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/third-parties": "^16.1.6",
+    "@react-oauth/google": "^0.13.5",
     "@sentry/nextjs": "^10.40.0",
     "next": "16.1.6",
     "next-intl": "^4.8.2",

@@ -1,45 +1,102 @@
 "use client";
 
+import {
+  GoogleOAuthProvider,
+  GoogleLogin,
+  type CredentialResponse,
+} from "@react-oauth/google";
+import { useLocale } from "next-intl";
+import { useEffect } from "react";
 import DownloadButton from "@/components/DownloadButton";
 import { usePostHogClient } from "@/utils/analytics/provider";
-import { captureAndNavigate } from "@/utils/analytics/capture";
+import { captureWithBridge } from "@/utils/analytics/capture";
 import { EVENTS } from "@/utils/analytics/events";
-import { APP_BASE_URL } from "@/utils/env";
+import { APP_BASE_URL, GOOGLE_CLIENT_ID } from "@/utils/env";
 
 interface Props {
   downloadLabel: string;
-  signUpWithGoogleLabel: string;
 }
 
-export default function HeroCTAGroup({
-  downloadLabel,
-  signUpWithGoogleLabel,
-}: Props) {
+// Map next-intl locale to the BCP-47 tag Google Identity Services expects.
+// Google needs the script subtag for Chinese; defaults to Brazilian Portuguese
+// since that covers the majority of pt speakers.
+const NEXT_INTL_TO_GOOGLE_LOCALE: Record<string, string> = {
+  en: "en",
+  zh: "zh-CN",
+  "zh-Hant": "zh-TW",
+  es: "es",
+  pt: "pt-BR",
+  fr: "fr",
+  de: "de",
+  ja: "ja",
+  ko: "ko",
+  ru: "ru",
+  it: "it",
+  nl: "nl",
+};
+
+function GoogleSignupButton() {
   const client = usePostHogClient();
+
+  // Google's GIS button renders inside a cross-origin iframe, so its clicks
+  // never bubble to React. Detect click intent via window blur + activeElement
+  // check: clicking (or keyboard-focusing) the iframe shifts focus into it.
+  useEffect(() => {
+    const handleBlur = () => {
+      const el = document.activeElement;
+      if (
+        el?.tagName === "IFRAME" &&
+        (el as HTMLIFrameElement).src.includes("accounts.google.com")
+      ) {
+        captureWithBridge(client, EVENTS.HOME_SIGNUP_BUTTON_CLICKED, {
+          button_location: "hero",
+        });
+      }
+    };
+    window.addEventListener("blur", handleBlur);
+    return () => window.removeEventListener("blur", handleBlur);
+  }, [client]);
+
+  const handleSuccess = (resp: CredentialResponse) => {
+    if (!resp.credential) return;
+    // Hand the Google ID token off to app.team9.ai via URL fragment so the
+    // existing /login flow can exchange it for a session in localStorage.
+    // Fragment (not query) keeps the token out of server access logs and the
+    // HTTP referer header; app.team9.ai's login page strips the hash on read.
+    const url = `${APP_BASE_URL}/login#google_credential=${encodeURIComponent(resp.credential)}`;
+    window.location.assign(url);
+  };
+
+  return (
+    <GoogleLogin
+      onSuccess={handleSuccess}
+      text="signup_with"
+      theme="outline"
+      size="large"
+      shape="rectangular"
+      width="220"
+    />
+  );
+}
+
+export default function HeroCTAGroup({ downloadLabel }: Props) {
+  const locale = useLocale();
+  const googleLocale = NEXT_INTL_TO_GOOGLE_LOCALE[locale] ?? "en";
 
   return (
     <>
       <DownloadButton
         label={downloadLabel}
-        className="inline-flex items-center justify-center gap-2 rounded-[12px] bg-white px-5 py-3 text-[14px] font-semibold text-[#0a0d12] transition-colors hover:bg-white/92 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 disabled:opacity-60"
+        className="inline-flex h-10 w-55 items-center justify-center gap-3 rounded-sm bg-white px-4 text-[14px] font-medium text-[#0a0d12] transition-colors hover:bg-white/92 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 disabled:opacity-60"
       />
-      <a
-        href={APP_BASE_URL}
-        onClick={(e) => {
-          captureAndNavigate(e, client, EVENTS.HOME_SIGNUP_BUTTON_CLICKED, {
-            button_location: "hero",
-          });
-        }}
-        className="inline-flex items-center justify-center gap-2 rounded-[12px] border border-white/18 bg-black/16 px-5 py-3 text-[14px] font-semibold text-white backdrop-blur-sm transition-colors hover:bg-black/24 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
-      >
-        <svg viewBox="0 0 24 24" className="size-4" aria-hidden="true">
-          <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.24 1.54-1.8 4.5-5.5 4.5-3.31 0-6-2.69-6-6s2.69-6 6-6c1.88 0 3.13.8 3.85 1.49l2.62-2.54C16.82 4.01 14.64 3.2 12 3.2 7.03 3.2 3 7.23 3 12.2s4.03 9 9 9c5.19 0 8.62-3.65 8.62-8.8 0-.59-.06-1.04-.14-1.48H12Z" />
-          <path fill="#4285F4" d="M3.98 7.54 7.2 9.9A5.41 5.41 0 0 1 12 6.6c1.88 0 3.13.8 3.85 1.49l2.62-2.54C16.82 4.01 14.64 3.2 12 3.2c-3.46 0-6.44 1.99-8.02 4.34Z" />
-          <path fill="#FBBC05" d="M3 12.2c0 1.58.38 3.07 1.06 4.38l3.58-2.76a5.4 5.4 0 0 1-.28-1.62c0-.56.1-1.1.28-1.62L4.06 7.82A8.94 8.94 0 0 0 3 12.2Z" />
-          <path fill="#34A853" d="M12 21.2c2.44 0 4.48-.8 5.98-2.18l-3.48-2.7c-.94.65-2.14 1.08-3.5 1.08-2.7 0-5-1.82-5.82-4.28L4.06 16.58A9 9 0 0 0 12 21.2Z" />
-        </svg>
-        {signUpWithGoogleLabel}
-      </a>
+      {GOOGLE_CLIENT_ID ? (
+        <GoogleOAuthProvider
+          clientId={GOOGLE_CLIENT_ID}
+          locale={googleLocale}
+        >
+          <GoogleSignupButton />
+        </GoogleOAuthProvider>
+      ) : null}
     </>
   );
 }

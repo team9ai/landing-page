@@ -177,10 +177,7 @@ export default async function HomePage() {
                     {tHero("subheadline")}
                   </p>
                   <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                    <HeroCTAGroup
-                      downloadLabel={tHero("downloadMac")}
-                      signUpWithGoogleLabel={tHero("signUpWithGoogle")}
-                    />
+                    <HeroCTAGroup downloadLabel={tHero("downloadMac")} />
                   </div>
                   <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
                     <span className="text-[15px] text-white/50">{tHero("worksWith")}</span>
