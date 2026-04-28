@@ -73,7 +73,7 @@ function GoogleSignupButton() {
         onSuccess={handleSuccess}
         text="signup_with"
         theme="outline"
-        size="medium"
+        size="large"
         shape="rectangular"
         width="220"
       />
