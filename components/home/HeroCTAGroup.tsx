@@ -68,14 +68,16 @@ function GoogleSignupButton() {
   };
 
   return (
-    <GoogleLogin
-      onSuccess={handleSuccess}
-      text="signup_with"
-      theme="outline"
-      size="large"
-      shape="rectangular"
-      width="220"
-    />
+    <div className="overflow-hidden rounded-sm">
+      <GoogleLogin
+        onSuccess={handleSuccess}
+        text="signup_with"
+        theme="outline"
+        size="medium"
+        shape="rectangular"
+        width="220"
+      />
+    </div>
   );
 }
 
